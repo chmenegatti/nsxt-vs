@@ -5,34 +5,28 @@ import (
 	"fmt"
 
 	"github.com/chmenegatti/nsxt-vs/config"
+	"github.com/chmenegatti/nsxt-vs/utils"
 	_ "github.com/go-sql-driver/mysql"
 )
 
 type DatabaseManager struct {
-	DB *sql.DB
+	db *sql.DB
 }
 
 func NewDatabaseManager(cfg config.DatabaseConfig) (*DatabaseManager, error) {
 	dsn := fmt.Sprintf("%s:%s@tcp(%s:%d)/%s", cfg.User, cfg.Password, cfg.Host, cfg.Port, cfg.DBName)
-
 	db, err := sql.Open("mysql", dsn)
 	if err != nil {
-		return nil, fmt.Errorf("could not connect to the database: %w", err)
+		return nil, fmt.Errorf("could not connect to the database: %v", err)
 	}
-
-	if err := db.Ping(); err != nil {
-		db.Close()
-		return nil, fmt.Errorf("database is not reachable: %w", err)
-	}
-
-	return &DatabaseManager{DB: db}, nil
+	return &DatabaseManager{db: db}, nil
 }
 
 func (dm *DatabaseManager) QueryLoadBalances() ([][3]string, error) {
-	const query = "SELECT vip_port, address_load_balance, nsxt_virtual_server_id FROM load_balances"
-	rows, err := dm.DB.Query(query)
+	query := `SELECT vip_port, address_load_balance, nsxt_virtual_server_id FROM load_balances`
+	rows, err := dm.db.Query(query)
 	if err != nil {
-		return nil, fmt.Errorf("query failed: %w", err)
+		return nil, err
 	}
 	defer rows.Close()
 
@@ -40,19 +34,18 @@ func (dm *DatabaseManager) QueryLoadBalances() ([][3]string, error) {
 	for rows.Next() {
 		var vipPort, addressLoadBalance, nsxtVirtualServerID string
 		if err := rows.Scan(&vipPort, &addressLoadBalance, &nsxtVirtualServerID); err != nil {
-			return nil, fmt.Errorf("row scan failed: %w", err)
+			return nil, err
 		}
-		id := nsxtVirtualServerID
 		displayName := fmt.Sprintf("%s-%s", addressLoadBalance, vipPort)
-		results = append(results, [3]string{id, displayName, vipPort})
+		results = append(results, [3]string{nsxtVirtualServerID, displayName, vipPort})
 	}
 
+	utils.SortLoadBalancesByIP(results)
 	return results, nil
 }
 
-func (dm *DatabaseManager) Close() error {
-	if dm.DB != nil {
-		return dm.DB.Close()
+func (dm *DatabaseManager) Close() {
+	if dm.db != nil {
+		dm.db.Close()
 	}
-	return nil
 }

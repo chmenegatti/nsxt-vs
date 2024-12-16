@@ -7,57 +7,53 @@ import (
 	"gopkg.in/yaml.v2"
 )
 
-type Configuration interface {
-	Load(filename string) error
-	GetDatabaseConfig(serverName string) (DatabaseConfig, error)
-	GetNSXtConfig(serverName string) (NSXtConfig, error)
-}
-
-type DatabaseConfig struct {
-	User     string
-	Password string
-	Host     string
-	Port     int
-	DBName   string
-}
-
-type NSXtConfig struct {
-	SessionID string
-	Auth      string
-	URL       string
-}
-
-type YAMLConfig struct {
+type Config struct {
 	Databases   map[string]DatabaseConfig `yaml:"databases"`
 	NSXTServers map[string]NSXtConfig     `yaml:"nsxt_servers"`
 }
 
-func (c *YAMLConfig) Load(filename string) error {
-	file, err := os.Open(filename)
+type DatabaseConfig struct {
+	User     string `yaml:"user"`
+	Password string `yaml:"password"`
+	Host     string `yaml:"host"`
+	Port     int    `yaml:"port"`
+	DBName   string `yaml:"dbname"`
+}
+
+type NSXtConfig struct {
+	SessionID string `yaml:"session_id"`
+	Auth      string `yaml:"auth"`
+	URL       string `yaml:"url"`
+}
+
+func LoadConfig(filename string) (*Config, error) {
+	f, err := os.Open(filename)
 	if err != nil {
-		return fmt.Errorf("failed to open file: %w", err)
+		return nil, err
 	}
-	defer file.Close()
+	defer f.Close()
 
-	decoder := yaml.NewDecoder(file)
-	if err := decoder.Decode(c); err != nil {
-		return fmt.Errorf("failed to decode YAML: %w", err)
+	var cfg Config
+	decoder := yaml.NewDecoder(f)
+	if err := decoder.Decode(&cfg); err != nil {
+		return nil, err
 	}
-	return nil
+
+	return &cfg, nil
 }
 
-func (c *YAMLConfig) GetDatabaseConfig(serverName string) (DatabaseConfig, error) {
-	config, exists := c.Databases[serverName]
+func (c *Config) GetDatabaseConfig(serverName string) (DatabaseConfig, error) {
+	cfg, exists := c.Databases[serverName]
 	if !exists {
-		return DatabaseConfig{}, fmt.Errorf("database server '%s' not found", serverName)
+		return DatabaseConfig{}, fmt.Errorf("database server '%s' not found in configuration", serverName)
 	}
-	return config, nil
+	return cfg, nil
 }
 
-func (c *YAMLConfig) GetNSXtConfig(serverName string) (NSXtConfig, error) {
-	config, exists := c.NSXTServers[serverName]
+func (c *Config) GetNSXtConfig(serverName string) (NSXtConfig, error) {
+	cfg, exists := c.NSXTServers[serverName]
 	if !exists {
-		return NSXtConfig{}, fmt.Errorf("NSX-T server '%s' not found", serverName)
+		return NSXtConfig{}, fmt.Errorf("NSX-T server '%s' not found in configuration", serverName)
 	}
-	return config, nil
+	return cfg, nil
 }

@@ -10,67 +10,57 @@ import (
 	"github.com/chmenegatti/nsxt-vs/config"
 )
 
-type NSXtClient struct {
-	baseURL   string
-	sessionID string
-	authToken string
+type NSXtAPIClient struct {
+	config config.NSXtConfig
 }
 
-func NewNSXtClient(cfg config.NSXtConfig) *NSXtClient {
-	return &NSXtClient{
-		baseURL:   cfg.URL,
-		sessionID: cfg.SessionID,
-		authToken: cfg.Auth,
-	}
+func NewNSXtAPIClient(cfg config.NSXtConfig) *NSXtAPIClient {
+	return &NSXtAPIClient{config: cfg}
 }
 
-func (c *NSXtClient) FetchData(endpoint string) ([]byte, error) {
-	// Disable SSL verification (for testing purposes only)
+func (c *NSXtAPIClient) FetchData(path string) ([]byte, error) {
 	http.DefaultTransport.(*http.Transport).TLSClientConfig = &tls.Config{InsecureSkipVerify: true}
 
-	url := fmt.Sprintf("%s%s", c.baseURL, endpoint)
+	url := c.config.URL + path
 	req, err := http.NewRequest("GET", url, nil)
 	if err != nil {
-		return nil, fmt.Errorf("failed to create request: %w", err)
+		return nil, err
 	}
 
-	req.Header.Set("Cookie", fmt.Sprintf("JSESSIONID=%s", c.sessionID))
-	req.Header.Set("Authorization", fmt.Sprintf("Basic %s", c.authToken))
+	req.Header.Add("Cookie", fmt.Sprintf("JSESSIONID=%s", c.config.SessionID))
+	req.Header.Add("Authorization", fmt.Sprintf("Basic %s", c.config.Auth))
 
 	client := &http.Client{}
 	resp, err := client.Do(req)
 	if err != nil {
-		return nil, fmt.Errorf("request failed: %w", err)
+		return nil, err
 	}
 	defer resp.Body.Close()
-
-	if resp.StatusCode != http.StatusOK {
-		return nil, fmt.Errorf("unexpected status code: %d", resp.StatusCode)
-	}
 
 	return io.ReadAll(resp.Body)
 }
 
 type VirtualServer struct {
-	ID          string `json:"id"`
-	DisplayName string `json:"display_name"`
-	Path        string `json:"path"`
+	ID            string `json:"id"`
+	DisplayName   string `json:"display_name"`
+	Path          string `json:"path"`
+	LbServicePath string `json:"lb_service_path"`
 }
 
-type APIResponse struct {
+type VsResponse struct {
 	Results []VirtualServer `json:"results"`
 }
 
-func (c *NSXtClient) GetVirtualServers() ([]VirtualServer, error) {
-	data, err := c.FetchData("/policy/api/v1/infra/lb-virtual-servers/")
+func (c *NSXtAPIClient) GetVirtualServers() ([]VirtualServer, error) {
+	rawData, err := c.FetchData("/policy/api/v1/infra/lb-virtual-servers/")
 	if err != nil {
-		return nil, fmt.Errorf("failed to fetch virtual servers: %w", err)
+		return nil, err
 	}
 
-	var response APIResponse
-	if err := json.Unmarshal(data, &response); err != nil {
-		return nil, fmt.Errorf("failed to unmarshal response: %w", err)
+	var apiResponse VsResponse
+	if err := json.Unmarshal(rawData, &apiResponse); err != nil {
+		return nil, err
 	}
 
-	return response.Results, nil
+	return apiResponse.Results, nil
 }
