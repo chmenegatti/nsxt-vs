@@ -15,8 +15,10 @@ func main() {
 		log.Fatalf("Could not load config: %v", err)
 	}
 
+	token := configuration.GetToken()
+
 	cmd.PopulateCSV(configuration, EDGE)
 
-	cmd.VerifyAndSendSlackMessage(EDGE)
+	cmd.VerifyAndSendSlackMessage(EDGE, token)
 
 }

@@ -15,7 +15,6 @@ import (
 const (
 	CSVPath      = "diff_enriched.csv"                      // Caminho do arquivo CSV
 	SlackWebhook = "https://slack.com/api/chat.postMessage" // URL do webhook do Slack
-	Token        = "Bearer xoxb-15859226403-2753744341620-jiYkL1WZZ2J5c3QfmXiqwkyG"
 	SlackChannel = "C05JHLCMVK8"
 )
 
@@ -30,7 +29,7 @@ type Row struct {
 // Map para armazenar o estado anterior do CSV
 var previousState = make(map[string]Row)
 
-func VerifyAndSendSlackMessage(edge string) {
+func VerifyAndSendSlackMessage(edge, token string) {
 	log.Println("Iniciando a leitura do arquivo CSV...")
 
 	file, err := os.Open(CSVPath)
@@ -72,7 +71,7 @@ func VerifyAndSendSlackMessage(edge string) {
 	updates := detectUpdates(currentState, previousState)
 	if len(updates) > 0 {
 		for _, row := range updates {
-			sendSlackMessage(row, edge)
+			sendSlackMessage(row, edge, token)
 		}
 		previousState = currentState
 		log.Println("Atualizações processadas com sucesso.")
@@ -107,8 +106,9 @@ type SlackAttachment struct {
 	AttachmentType string `json:"attachment_type"`
 }
 
-func sendSlackMessage(row Row, edge string) {
+func sendSlackMessage(row Row, edge, token string) {
 	edge = strings.ToUpper(edge)
+
 	mainText := fmt.Sprintf("*%s - Virtual Server Órfão Detectado*", edge)
 	attachmentText := fmt.Sprintf(
 		"*Floating:* %s - *CCODE:* %s\n *ID:* %s",
@@ -141,7 +141,7 @@ func sendSlackMessage(row Row, edge string) {
 		return
 	}
 	req.Header.Set("Content-Type", "application/json")
-	req.Header.Set("Authorization", Token)
+	req.Header.Set("Authorization", fmt.Sprintf("Bearer %s", token))
 
 	client := &http.Client{}
 	resp, err := client.Do(req)

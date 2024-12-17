@@ -10,6 +10,7 @@ import (
 type Config struct {
 	Databases   map[string]DatabaseConfig `yaml:"databases"`
 	NSXTServers map[string]NSXtConfig     `yaml:"nsxt_servers"`
+	Token       string                    `yaml:"token"`
 }
 
 type DatabaseConfig struct {
@@ -56,4 +57,8 @@ func (c *Config) GetNSXtConfig(serverName string) (NSXtConfig, error) {
 		return NSXtConfig{}, fmt.Errorf("NSX-T server '%s' not found in configuration", serverName)
 	}
 	return cfg, nil
+}
+
+func (c *Config) GetToken() string {
+	return c.Token
 }
