@@ -40,7 +40,7 @@ func VerifyAndSendSlackMessage(edge, token string) {
 	defer func(file *os.File) {
 		err := file.Close()
 		if err != nil {
-
+			log.Printf("Erro ao fechar o arquivo CSV: %v\n", err)
 		}
 	}(file)
 
@@ -70,8 +70,9 @@ func VerifyAndSendSlackMessage(edge, token string) {
 	// Detecta atualizações e envia para o Slack
 	updates := detectUpdates(currentState, previousState)
 	if len(updates) > 0 {
-		for _, row := range updates {
-			sendSlackMessage(row, edge, token)
+		batchedUpdates := batchRows(updates, 30) // Agrupa em lotes de 30 linhas
+		for _, batch := range batchedUpdates {
+			sendSlackMessageBatch(batch, edge, token)
 		}
 		previousState = currentState
 		log.Println("Atualizações processadas com sucesso.")
@@ -94,6 +95,16 @@ func rowsEqual(a, b Row) bool {
 	return a.DisplayName == b.DisplayName && a.ClientCode == b.ClientCode
 }
 
+// Agrupa as linhas em lotes de tamanho definido
+func batchRows(rows []Row, batchSize int) [][]Row {
+	var batches [][]Row
+	for batchSize < len(rows) {
+		rows, batches = rows[batchSize:], append(batches, rows[0:batchSize:batchSize])
+	}
+	batches = append(batches, rows)
+	return batches
+}
+
 type SlackPayload struct {
 	Channel     string            `json:"channel"`
 	Text        string            `json:"text"`
@@ -106,21 +117,28 @@ type SlackAttachment struct {
 	AttachmentType string `json:"attachment_type"`
 }
 
-func sendSlackMessage(row Row, edge, token string) {
+// Envia uma mensagem com múltiplas linhas para o Slack
+func sendSlackMessageBatch(batch []Row, edge, token string) {
 	edge = strings.ToUpper(edge)
 
-	mainText := fmt.Sprintf("*%s - Virtual Server Órfão Detectado*", edge)
-	attachmentText := fmt.Sprintf(
-		"*Floating:* %s - *CCODE:* %s\n *ID:* %s",
-		row.DisplayName, row.ClientCode, row.ID,
-	)
+	mainText := fmt.Sprintf("*%s - Virtual Servers Órfãos Detectados*", edge)
+	var attachmentText strings.Builder
+
+	for _, row := range batch {
+		attachmentText.WriteString(
+			fmt.Sprintf(
+				"Floating: %s - CCODE: %s\n ID: %s\n",
+				row.DisplayName, row.ClientCode, row.ID,
+			),
+		)
+	}
 
 	payload := SlackPayload{
 		Channel: SlackChannel,
 		Text:    mainText,
 		Attachments: []SlackAttachment{
 			{
-				Text:           attachmentText,
+				Text:           fmt.Sprintf("```%s```", attachmentText.String()),
 				Color:          "#D00000",
 				AttachmentType: "default",
 			},
@@ -152,13 +170,13 @@ func sendSlackMessage(row Row, edge, token string) {
 	defer func(Body io.ReadCloser) {
 		err := Body.Close()
 		if err != nil {
-
+			log.Printf("Erro ao fechar a resposta do Slack: %v\n", err)
 		}
 	}(resp.Body)
 
 	if resp.StatusCode != http.StatusOK && resp.StatusCode != http.StatusNoContent {
 		log.Printf("Resposta inesperada do Slack: %v\n", resp.Status)
 	} else {
-		log.Printf("Mensagem enviada ao Slack: %s - %s - %s\n", mainText, row.DisplayName, row.ClientCode)
+		log.Printf("Mensagem enviada ao Slack: %s\n", mainText)
 	}
 }

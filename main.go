@@ -7,7 +7,7 @@ import (
 	"github.com/chmenegatti/nsxt-vs/config"
 )
 
-const EDGE = "tece01"
+const EDGE = "tesp03"
 
 func main() {
 	configuration, err := config.LoadConfig("config.yaml")
@@ -15,10 +15,10 @@ func main() {
 		log.Fatalf("Could not load config: %v", err)
 	}
 
-	token := configuration.GetToken()
+	//token := configuration.GetToken()
 
 	cmd.PopulateCSV(configuration, EDGE)
 
-	cmd.VerifyAndSendSlackMessage(EDGE, token)
+	//cmd.VerifyAndSendSlackMessage(EDGE, token)
 
 }

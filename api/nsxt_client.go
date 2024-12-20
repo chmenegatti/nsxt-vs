@@ -35,7 +35,12 @@ func (c *NSXtAPIClient) FetchData(path string) ([]byte, error) {
 	if err != nil {
 		return nil, err
 	}
-	defer resp.Body.Close()
+	defer func(Body io.ReadCloser) {
+		err := Body.Close()
+		if err != nil {
+
+		}
+	}(resp.Body)
 
 	return io.ReadAll(resp.Body)
 }
@@ -49,18 +54,34 @@ type VirtualServer struct {
 
 type VsResponse struct {
 	Results []VirtualServer `json:"results"`
+	Cursor  string          `json:"cursor"`
 }
 
 func (c *NSXtAPIClient) GetVirtualServers() ([]VirtualServer, error) {
-	rawData, err := c.FetchData("/policy/api/v1/infra/lb-virtual-servers/")
-	if err != nil {
-		return nil, err
+	var (
+		apiResponse VsResponse
+		results     VsResponse
+	)
+
+	cursor := "00040000"
+	for {
+		rawData, err := c.FetchData(fmt.Sprintf("/policy/api/v1/infra/lb-virtual-servers/?cursor=%s", cursor))
+		if err != nil {
+			return nil, err
+		}
+
+		if err := json.Unmarshal(rawData, &apiResponse); err != nil {
+			return nil, err
+		}
+
+		results.Results = append(results.Results, apiResponse.Results...)
+
+		if apiResponse.Cursor == "" {
+			break
+		}
+		cursor = apiResponse.Cursor
+		apiResponse.Cursor = ""
 	}
 
-	var apiResponse VsResponse
-	if err := json.Unmarshal(rawData, &apiResponse); err != nil {
-		return nil, err
-	}
-
-	return apiResponse.Results, nil
+	return results.Results, nil
 }
