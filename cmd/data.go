@@ -21,7 +21,7 @@ func PopulateCSV(config *config.Config, EDGE string) {
 		log.Fatalf("Query failed: %v", err)
 	}
 
-	if err := csvapi.WriteCSV(rows, "nemesis.csv"); err != nil {
+	if err := csvapi.WriteCSV(rows, fmt.Sprintf("%s - nemesis.csv", EDGE)); err != nil {
 		log.Fatalf("Could not write to CSV: %v", err)
 	}
 	fmt.Println("Data successfully saved to nemesis.csv")
@@ -31,16 +31,18 @@ func PopulateCSV(config *config.Config, EDGE string) {
 		log.Fatalf("NSX-T client setup failed: %v", err)
 	}
 
-	if err := operations.FetchAndSaveNSXtData(nsxtClient); err != nil {
+	if err := operations.FetchAndSaveNSXtData(nsxtClient, EDGE); err != nil {
 		log.Fatalf("Failed to fetch and save NSX-T data: %v", err)
 	}
-
-	if err := csvapi.CompareCSVFiles("nemesis.csv", "nsxt.csv", "diff.csv"); err != nil {
+	bd := fmt.Sprintf("%s - nemesis.csv", EDGE)
+	app := fmt.Sprintf("%s - nsxt.csv", EDGE)
+	diff := fmt.Sprintf("%s - diff.csv", EDGE)
+	if err := csvapi.CompareCSVFiles(bd, app, diff); err != nil {
 		log.Fatalf("Failed to generate diff CSV: %v", err)
 	}
 	fmt.Println("Diff CSV generated successfully")
 
-	if err := operations.EnrichDiffCSV(nsxtClient); err != nil {
+	if err := operations.EnrichDiffCSV(nsxtClient, EDGE); err != nil {
 		log.Fatalf("Failed to enrich diff CSV: %v", err)
 	}
 }

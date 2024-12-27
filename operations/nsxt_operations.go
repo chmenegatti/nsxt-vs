@@ -14,22 +14,24 @@ import (
 	"github.com/chmenegatti/nsxt-vs/utils"
 )
 
-func FetchAndSaveNSXtData(client *api.NSXtAPIClient) error {
+func FetchAndSaveNSXtData(client *api.NSXtAPIClient, edge string) error {
 	servers, err := client.GetVirtualServers()
 	if err != nil {
 		return fmt.Errorf("failed to fetch data: %v", err)
 	}
 
-	sort.SliceStable(servers, func(i, j int) bool {
-		return utils.CompareIPPort(servers[i], servers[j])
-	})
+	sort.SliceStable(
+		servers, func(i, j int) bool {
+			return utils.CompareIPPort(servers[i], servers[j])
+		},
+	)
 
 	records := make([][3]string, len(servers))
 	for i, server := range servers {
 		records[i] = [3]string{server.ID, server.DisplayName, server.LbServicePath}
 	}
 
-	if err := csvapi.WriteCSV(records, "nsxt.csv"); err != nil {
+	if err := csvapi.WriteCSV(records, fmt.Sprintf("%s - nsxt.csv", edge)); err != nil {
 		return fmt.Errorf("failed to write CSV: %v", err)
 	}
 
@@ -37,13 +39,13 @@ func FetchAndSaveNSXtData(client *api.NSXtAPIClient) error {
 	return nil
 }
 
-func EnrichDiffCSV(client *api.NSXtAPIClient) error {
-	records, err := csvapi.ReadCSVFile("diff.csv")
+func EnrichDiffCSV(client *api.NSXtAPIClient, edge string) error {
+	records, err := csvapi.ReadCSVFile(fmt.Sprintf("%s - diff.csv", edge))
 	if err != nil {
 		return fmt.Errorf("error reading diff.csv: %v", err)
 	}
 
-	outputFile, err := os.Create("diff_enriched.csv")
+	outputFile, err := os.Create(fmt.Sprintf("%s - diff_enriched.csv", edge))
 	if err != nil {
 		return fmt.Errorf("error creating diff_enriched.csv: %v", err)
 	}
