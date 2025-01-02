@@ -40,12 +40,12 @@ func FetchAndSaveNSXtData(client *api.NSXtAPIClient, edge string) error {
 }
 
 func EnrichDiffCSV(client *api.NSXtAPIClient, edge string) error {
-	records, err := csvapi.ReadCSVFile(fmt.Sprintf("%s - diff.csv", edge))
+	records, err := csvapi.ReadCSVFile(fmt.Sprintf("/opt/services/%s - diff.csv", edge))
 	if err != nil {
 		return fmt.Errorf("error reading diff.csv: %v", err)
 	}
 
-	outputFile, err := os.Create(fmt.Sprintf("%s - diff_enriched.csv", edge))
+	outputFile, err := os.Create(fmt.Sprintf("/opt/services/%s - diff_enriched.csv", edge))
 	if err != nil {
 		return fmt.Errorf("error creating diff_enriched.csv: %v", err)
 	}
@@ -81,7 +81,7 @@ func EnrichDiffCSV(client *api.NSXtAPIClient, edge string) error {
 }
 
 func fetchClientCode(client *api.NSXtAPIClient, servicePath string) (string, error) {
-	rawData, err := client.FetchData("/policy/api/v1" + servicePath)
+	rawData, err := client.FetchData("GET", "/policy/api/v1"+servicePath)
 	if err != nil {
 		return "", err
 	}

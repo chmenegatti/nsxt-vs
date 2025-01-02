@@ -18,11 +18,11 @@ func NewNSXtAPIClient(cfg config.NSXtConfig) *NSXtAPIClient {
 	return &NSXtAPIClient{config: cfg}
 }
 
-func (c *NSXtAPIClient) FetchData(path string) ([]byte, error) {
+func (c *NSXtAPIClient) FetchData(action, path string) ([]byte, error) {
 	http.DefaultTransport.(*http.Transport).TLSClientConfig = &tls.Config{InsecureSkipVerify: true}
 
 	url := c.config.URL + path
-	req, err := http.NewRequest("GET", url, nil)
+	req, err := http.NewRequest(action, url, nil)
 	if err != nil {
 		return nil, err
 	}
@@ -45,6 +45,33 @@ func (c *NSXtAPIClient) FetchData(path string) ([]byte, error) {
 	return io.ReadAll(resp.Body)
 }
 
+func (c *NSXtAPIClient) DeleteRecord(action, path string) error {
+	http.DefaultTransport.(*http.Transport).TLSClientConfig = &tls.Config{InsecureSkipVerify: true}
+
+	url := c.config.URL + path
+	req, err := http.NewRequest(action, url, nil)
+	if err != nil {
+
+	}
+
+	req.Header.Add("Cookie", fmt.Sprintf("JSESSIONID=%s", c.config.SessionID))
+	req.Header.Add("Authorization", fmt.Sprintf("Basic %s", c.config.Auth))
+
+	client := &http.Client{}
+
+	resp, err := client.Do(req)
+	if err != nil {
+	}
+
+	defer func(Body io.ReadCloser) {
+		err := Body.Close()
+		if err != nil {
+		}
+	}(resp.Body)
+
+	return nil
+}
+
 type VirtualServer struct {
 	ID            string `json:"id"`
 	DisplayName   string `json:"display_name"`
@@ -65,7 +92,7 @@ func (c *NSXtAPIClient) GetVirtualServers() ([]VirtualServer, error) {
 
 	cursor := "00040000"
 	for {
-		rawData, err := c.FetchData(fmt.Sprintf("/policy/api/v1/infra/lb-virtual-servers/?cursor=%s", cursor))
+		rawData, err := c.FetchData("GET", fmt.Sprintf("/policy/api/v1/infra/lb-virtual-servers/?cursor=%s", cursor))
 		if err != nil {
 			return nil, err
 		}
@@ -84,4 +111,12 @@ func (c *NSXtAPIClient) GetVirtualServers() ([]VirtualServer, error) {
 	}
 
 	return results.Results, nil
+}
+
+func (c *NSXtAPIClient) DeleteVirtualServer(id string) error {
+	if err := c.DeleteRecord("DELETE", fmt.Sprintf("/policy/api/v1/infra/lb-virtual-servers/%s", id)); err != nil {
+		return err
+	}
+
+	return nil
 }
