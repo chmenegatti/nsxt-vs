@@ -10,7 +10,7 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-const EDGE = "tesp03"
+const EDGE = "tesp05"
 
 func main() {
 
@@ -21,8 +21,12 @@ func main() {
 func setupGin(filename string) {
 	r := gin.Default()
 
+	servers := []string{
+		"*", "http://127.0.0.1", "http://localhost", "http://10.100.21.11", "http://10.108.21.11", "http://10.114.21.11",
+	}
+
 	config := cors.DefaultConfig()
-	config.AllowOrigins = []string{"http://127.0.0.1", "http://localhost", "http://10.100.21.11"}
+	config.AllowOrigins = servers
 	config.AllowMethods = []string{"GET", "DELETE"}
 	r.Use(cors.New(config))
 
