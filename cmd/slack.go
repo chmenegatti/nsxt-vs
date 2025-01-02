@@ -10,6 +10,8 @@ import (
 	"net/http"
 	"os"
 	"strings"
+
+	"github.com/chmenegatti/nsxt-vs/utils"
 )
 
 const (
@@ -32,7 +34,15 @@ var previousState = make(map[string]Row)
 func VerifyAndSendSlackMessage(edge, token string) {
 	log.Println("Iniciando a leitura do arquivo CSV...")
 
-	file, err := os.Open(CSVPath)
+	var filepath string
+	var err error
+
+	if filepath, err = utils.GetCSVFilePath(fmt.Sprintf("%s-%s", edge, CSVPath)); err != nil {
+		log.Fatalf("Erro ao obter o caminho do arquivo CSV: %v", err)
+		return
+	}
+
+	file, err := os.Open(filepath)
 	if err != nil {
 		log.Printf("Erro ao abrir o arquivo CSV: %v\n", err)
 		return

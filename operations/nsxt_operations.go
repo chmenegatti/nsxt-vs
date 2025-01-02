@@ -31,7 +31,14 @@ func FetchAndSaveNSXtData(client *api.NSXtAPIClient, edge string) error {
 		records[i] = [3]string{server.ID, server.DisplayName, server.LbServicePath}
 	}
 
-	if err := csvapi.WriteCSV(records, fmt.Sprintf("%s - nsxt.csv", edge)); err != nil {
+	var filepath string
+
+	nsxt := fmt.Sprintf("%s-nsxt.csv", edge)
+	if filepath, err = utils.GetCSVFilePath(nsxt); err != nil {
+		return fmt.Errorf("error getting CSV file path: %v", err)
+	}
+
+	if err := csvapi.WriteCSV(records, filepath); err != nil {
 		return fmt.Errorf("failed to write CSV: %v", err)
 	}
 
@@ -40,12 +47,22 @@ func FetchAndSaveNSXtData(client *api.NSXtAPIClient, edge string) error {
 }
 
 func EnrichDiffCSV(client *api.NSXtAPIClient, edge string) error {
-	records, err := csvapi.ReadCSVFile(fmt.Sprintf("/opt/services/%s - diff.csv", edge))
+	var filepath string
+	var err error
+
+	if filepath, err = utils.GetCSVFilePath(fmt.Sprintf("%s-diff.csv", edge)); err != nil {
+		return fmt.Errorf("error getting CSV file path: %v", err)
+	}
+	records, err := csvapi.ReadCSVFile(filepath)
 	if err != nil {
 		return fmt.Errorf("error reading diff.csv: %v", err)
 	}
 
-	outputFile, err := os.Create(fmt.Sprintf("/opt/services/%s - diff_enriched.csv", edge))
+	enrich := fmt.Sprintf("%s-diff_enriched.csv", edge)
+	if filepath, err = utils.GetCSVFilePath(enrich); err != nil {
+		return fmt.Errorf("error getting CSV file path: %v", err)
+	}
+	outputFile, err := os.Create(filepath)
 	if err != nil {
 		return fmt.Errorf("error creating diff_enriched.csv: %v", err)
 	}

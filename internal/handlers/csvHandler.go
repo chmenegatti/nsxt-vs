@@ -76,6 +76,9 @@ func (h *CSVHandler) DeleteCSVRecord(c *gin.Context) {
 func (h *CSVHandler) PopulateCSVData(c *gin.Context) {
 	edge := c.Param("edge")
 
-	h.repo.GetCSVData(edge)
+	err := h.repo.GetCSVData(edge)
+	if err != nil {
+		return
+	}
 	c.JSON(http.StatusOK, gin.H{"message": "CSV populated"})
 }
