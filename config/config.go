@@ -1,17 +1,11 @@
 package config
 
 import (
-	"fmt"
-	"os"
+	"errors"
 
-	"gopkg.in/yaml.v2"
+	"github.com/spf13/viper"
+	"go.uber.org/zap"
 )
-
-type Config struct {
-	Databases   map[string]DatabaseConfig `yaml:"databases"`
-	NSXTServers map[string]NSXtConfig     `yaml:"nsxt_servers"`
-	Token       string                    `yaml:"token"`
-}
 
 type DatabaseConfig struct {
 	User     string `yaml:"user"`
@@ -21,44 +15,43 @@ type DatabaseConfig struct {
 	DBName   string `yaml:"dbname"`
 }
 
-type NSXtConfig struct {
-	SessionID string `yaml:"session_id"`
-	Auth      string `yaml:"auth"`
+type NSXTConfig struct {
 	URL       string `yaml:"url"`
+	Auth      string `yaml:"auth"`
+	SessionId string `yaml:"session_id"`
 }
 
-func LoadConfig(filename string) (*Config, error) {
-	f, err := os.Open(filename)
-	if err != nil {
+type Config struct {
+	Databases   map[string]DatabaseConfig `yaml:"databases"`
+	NSXTServers map[string]NSXTConfig     `yaml:"nsxt_servers"`
+	Token       string                    `yaml:"token"`
+}
+
+func LoadConfig(edge string, logger *zap.Logger) (*Config, error) {
+	viper.SetConfigName("config")
+	viper.SetConfigType("yaml")
+	viper.AddConfigPath(".")
+
+	if err := viper.ReadInConfig(); err != nil {
+		logger.Error("Failed to read config file", zap.Error(err))
 		return nil, err
 	}
-	defer f.Close()
 
-	var cfg Config
-	decoder := yaml.NewDecoder(f)
-	if err := decoder.Decode(&cfg); err != nil {
+	var config *Config
+	if err := viper.Unmarshal(&config); err != nil {
+		logger.Error("Failed to unmarshal config", zap.Error(err))
 		return nil, err
 	}
 
-	return &cfg, nil
-}
-
-func (c *Config) GetDatabaseConfig(serverName string) (DatabaseConfig, error) {
-	cfg, exists := c.Databases[serverName]
+	_, exists := config.Databases[edge]
 	if !exists {
-		return DatabaseConfig{}, fmt.Errorf("database server '%s' not found in configuration", serverName)
+		return nil, errors.New("database configuration not found for edge: " + edge)
 	}
-	return cfg, nil
-}
 
-func (c *Config) GetNSXtConfig(serverName string) (NSXtConfig, error) {
-	cfg, exists := c.NSXTServers[serverName]
+	_, exists = config.NSXTServers[edge]
 	if !exists {
-		return NSXtConfig{}, fmt.Errorf("NSX-T server '%s' not found in configuration", serverName)
+		return nil, errors.New("nsxt configuration not found for edge: " + edge)
 	}
-	return cfg, nil
-}
 
-func (c *Config) GetToken() string {
-	return c.Token
+	return config, nil
 }
