@@ -1,0 +1,682 @@
+{"level":"info","ts":"2025-01-04T09:01:42.013-0300","caller":"nsxt-vs/main.go:48","msg":"Starting server on port 4040"}
+{"level":"info","ts":"2025-01-04T09:01:48.591-0300","caller":"utils/csvmanager.go:34","msg":"Data successfully saved to CSV file"}
+{"level":"info","ts":"2025-01-04T09:01:48.591-0300","caller":"controllers/controller.go:63","msg":"Data successfully saved to CSV file - 4158 - vs.csv"}
+{"level":"info","ts":"2025-01-04T09:01:49.231-0300","caller":"nsxt/vs.go:69","msg":"Fetched page of virtual servers","count":1000,"total_so_far":1000}
+{"level":"info","ts":"2025-01-04T09:01:50.072-0300","caller":"nsxt/vs.go:69","msg":"Fetched page of virtual servers","count":1000,"total_so_far":2000}
+{"level":"info","ts":"2025-01-04T09:01:50.798-0300","caller":"nsxt/vs.go:69","msg":"Fetched page of virtual servers","count":1000,"total_so_far":3000}
+{"level":"info","ts":"2025-01-04T09:01:51.812-0300","caller":"nsxt/vs.go:69","msg":"Fetched page of virtual servers","count":1000,"total_so_far":4000}
+{"level":"info","ts":"2025-01-04T09:01:52.422-0300","caller":"nsxt/vs.go:69","msg":"Fetched page of virtual servers","count":325,"total_so_far":4325}
+{"level":"info","ts":"2025-01-04T09:01:52.422-0300","caller":"nsxt/vs.go:87","msg":"Completed fetching all virtual servers","total_records":4325}
+{"level":"info","ts":"2025-01-04T09:01:52.426-0300","caller":"utils/csvmanager.go:34","msg":"Data successfully saved to CSV file"}
+{"level":"info","ts":"2025-01-04T09:01:52.426-0300","caller":"controllers/controller.go:96","msg":"Data successfully saved to CSV file - 4325 - nsxt.csv"}
+{"level":"info","ts":"2025-01-04T09:01:52.459-0300","caller":"utils/csvmanager.go:34","msg":"Data successfully saved to CSV file"}
+{"level":"info","ts":"2025-01-04T09:01:52.459-0300","caller":"utils/csvmanager.go:102","msg":"Data successfully saved to CSV file - 178 - diff.csv"}
+{"level":"info","ts":"2025-01-06T14:37:30.769-0300","caller":"nsxt-vs/main.go:48","msg":"Starting server on port 4040"}
+{"level":"info","ts":"2025-01-06T14:37:45.022-0300","caller":"nsxt-vs/main.go:48","msg":"Starting server on port 4040"}
+{"level":"info","ts":"2025-01-06T14:37:59.356-0300","caller":"utils/csvmanager.go:34","msg":"Data successfully saved to CSV file"}
+{"level":"info","ts":"2025-01-06T14:37:59.356-0300","caller":"controllers/controller.go:97","msg":"Load balance data successfully saved to CSV","records":4160,"filename":"vs.csv"}
+{"level":"info","ts":"2025-01-06T14:38:00.093-0300","caller":"nsxt/vs.go:69","msg":"Fetched page of virtual servers","count":1000,"total_so_far":1000}
+{"level":"info","ts":"2025-01-06T14:38:00.732-0300","caller":"nsxt/vs.go:69","msg":"Fetched page of virtual servers","count":1000,"total_so_far":2000}
+{"level":"info","ts":"2025-01-06T14:38:01.658-0300","caller":"nsxt/vs.go:69","msg":"Fetched page of virtual servers","count":1000,"total_so_far":3000}
+{"level":"info","ts":"2025-01-06T14:38:02.418-0300","caller":"nsxt/vs.go:69","msg":"Fetched page of virtual servers","count":1000,"total_so_far":4000}
+{"level":"info","ts":"2025-01-06T14:38:02.988-0300","caller":"nsxt/vs.go:69","msg":"Fetched page of virtual servers","count":326,"total_so_far":4326}
+{"level":"info","ts":"2025-01-06T14:38:02.988-0300","caller":"nsxt/vs.go:87","msg":"Completed fetching all virtual servers","total_records":4326}
+{"level":"info","ts":"2025-01-06T14:38:02.992-0300","caller":"utils/csvmanager.go:34","msg":"Data successfully saved to CSV file"}
+{"level":"info","ts":"2025-01-06T14:38:02.992-0300","caller":"controllers/controller.go:130","msg":"NSXT data successfully saved to CSV","records":4326,"filename":"nsxt.csv"}
+{"level":"info","ts":"2025-01-06T14:38:03.022-0300","caller":"utils/csvmanager.go:34","msg":"Data successfully saved to CSV file"}
+{"level":"info","ts":"2025-01-06T14:38:03.022-0300","caller":"utils/csvmanager.go:102","msg":"Data successfully saved to CSV file - 177 - diff.csv"}
+{"level":"info","ts":"2025-01-06T14:38:03.068-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T16751_CMAFE8_ate"}
+{"level":"info","ts":"2025-01-06T14:38:03.115-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TFCZQB_C2A41I_ate"}
+{"level":"info","ts":"2025-01-06T14:38:03.155-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TFCZX9_C15QCF_ate"}
+{"level":"info","ts":"2025-01-06T14:38:03.215-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TFCD17_CXJZ12_ate"}
+{"level":"info","ts":"2025-01-06T14:38:03.268-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TEZGZL_CA4GFM_ate"}
+{"level":"info","ts":"2025-01-06T14:38:03.324-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TFD156_CMO7CG_ate"}
+{"level":"info","ts":"2025-01-06T14:38:03.363-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TFCZVR_CZTL8K_ate"}
+{"level":"info","ts":"2025-01-06T14:38:03.404-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TFD122_CJEGX4_ate"}
+{"level":"info","ts":"2025-01-06T14:38:03.505-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TFD122_CJEGX4_ate"}
+{"level":"info","ts":"2025-01-06T14:38:03.546-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TFD122_CJEGX4_ate"}
+{"level":"info","ts":"2025-01-06T14:38:03.591-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TFD135_CVJK5N_ate"}
+{"level":"info","ts":"2025-01-06T14:38:03.646-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TFCDSI_CTDOM0_ate"}
+{"level":"info","ts":"2025-01-06T14:38:03.695-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TFCZL9_CLJ4N9_ate"}
+{"level":"info","ts":"2025-01-06T14:38:03.746-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA3_CVAVA3_ate"}
+{"level":"info","ts":"2025-01-06T14:38:03.796-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA3_CVAVA3_ate"}
+{"level":"info","ts":"2025-01-06T14:38:03.838-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TFCZUM_COIGCR_ate"}
+{"level":"info","ts":"2025-01-06T14:38:03.881-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TFCZUM_COIGCR_ate"}
+{"level":"info","ts":"2025-01-06T14:38:03.929-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TFCZD4_CARG1J_ate"}
+{"level":"info","ts":"2025-01-06T14:38:03.984-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TEZBD7_CFVD2S_ate"}
+{"level":"info","ts":"2025-01-06T14:38:04.023-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TFCZQA_C4PYFH_ate"}
+{"level":"info","ts":"2025-01-06T14:38:04.057-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TFCZQ7_CQOKCT_ate"}
+{"level":"info","ts":"2025-01-06T14:38:04.097-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: tks-tstsug08"}
+{"level":"info","ts":"2025-01-06T14:38:04.133-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: tks-tstsug08"}
+{"level":"info","ts":"2025-01-06T14:38:04.171-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TFDGXS_CT4DFA_ate"}
+{"level":"info","ts":"2025-01-06T14:38:04.206-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TFDGXS_CT4DFA_ate"}
+{"level":"info","ts":"2025-01-06T14:38:04.240-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T58198_CSW5UQ_ate"}
+{"level":"info","ts":"2025-01-06T14:38:04.278-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T58198_CSW5UQ_ate"}
+{"level":"info","ts":"2025-01-06T14:38:04.313-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T58198_CSW5UQ_ate"}
+{"level":"info","ts":"2025-01-06T14:38:04.350-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T06131_CVORXY_ate"}
+{"level":"info","ts":"2025-01-06T14:38:04.389-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T06131_CVORXY_ate"}
+{"level":"info","ts":"2025-01-06T14:38:04.425-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T06131_CVORXY_ate"}
+{"level":"info","ts":"2025-01-06T14:38:04.472-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TFCZUL_CFSL98_ate"}
+{"level":"info","ts":"2025-01-06T14:38:04.541-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TFCZXC_C210VK_ate"}
+{"level":"info","ts":"2025-01-06T14:38:04.596-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TFCZXE_CE109H_ate"}
+{"level":"info","ts":"2025-01-06T14:38:04.633-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TCLAUDI2_CLAUDI2_ate"}
+{"level":"info","ts":"2025-01-06T14:38:04.670-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TDRDR2_CDRDR2_ate"}
+{"level":"info","ts":"2025-01-06T14:38:04.714-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TCLAUDI2_CLAUDI2_ate"}
+{"level":"info","ts":"2025-01-06T14:38:04.753-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TCLAUDI2_CLAUDI2_ate"}
+{"level":"info","ts":"2025-01-06T14:38:04.791-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TDRDR2_CDRDR2_ate"}
+{"level":"info","ts":"2025-01-06T14:38:04.834-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TCLAUDI2_CLAUDI2_ate"}
+{"level":"info","ts":"2025-01-06T14:38:04.887-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TDATASU2_CDATASU2_ate"}
+{"level":"info","ts":"2025-01-06T14:38:04.940-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TDATASU2_CDATASU2_ate"}
+{"level":"info","ts":"2025-01-06T14:38:04.992-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TDATASU2_CDATASU2_ate"}
+{"level":"info","ts":"2025-01-06T14:38:05.030-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TDATASU2_CDATASU2_ate"}
+{"level":"info","ts":"2025-01-06T14:38:05.067-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TDATASU2_CDATASU2_ate"}
+{"level":"info","ts":"2025-01-06T14:38:05.114-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: tks-tstsug08"}
+{"level":"info","ts":"2025-01-06T14:38:05.148-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T75069_CC54GO_ate"}
+{"level":"info","ts":"2025-01-06T14:38:05.185-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAV10_CVAV10_ate"}
+{"level":"info","ts":"2025-01-06T14:38:05.221-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: tks-tstsug08"}
+{"level":"info","ts":"2025-01-06T14:38:05.265-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAV10_CVAV10_ate"}
+{"level":"info","ts":"2025-01-06T14:38:05.303-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: tks-tstsug08"}
+{"level":"info","ts":"2025-01-06T14:38:05.351-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T75069_CC54GO_ate"}
+{"level":"info","ts":"2025-01-06T14:38:05.399-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA2_CVAVA2_ate"}
+{"level":"info","ts":"2025-01-06T14:38:05.433-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA2_CVAVA2_ate"}
+{"level":"info","ts":"2025-01-06T14:38:05.484-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA2_CVAVA2_ate"}
+{"level":"info","ts":"2025-01-06T14:38:05.534-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA2_CVAVA2_ate"}
+{"level":"info","ts":"2025-01-06T14:38:05.570-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA2_CVAVA2_ate"}
+{"level":"info","ts":"2025-01-06T14:38:05.632-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA2_CVAVA2_ate"}
+{"level":"info","ts":"2025-01-06T14:38:05.674-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA2_CVAVA2_ate"}
+{"level":"info","ts":"2025-01-06T14:38:05.712-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA2_CVAVA2_ate"}
+{"level":"info","ts":"2025-01-06T14:38:05.752-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA2_CVAVA2_ate"}
+{"level":"info","ts":"2025-01-06T14:38:05.835-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: tks-tstdan03"}
+{"level":"info","ts":"2025-01-06T14:38:05.883-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: tks-tstdan03"}
+{"level":"info","ts":"2025-01-06T14:38:05.923-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA2_CVAVA2_ate"}
+{"level":"info","ts":"2025-01-06T14:38:05.968-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA2_CVAVA2_ate"}
+{"level":"info","ts":"2025-01-06T14:38:06.002-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA2_CVAVA2_ate"}
+{"level":"info","ts":"2025-01-06T14:38:06.044-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA2_CVAVA2_ate"}
+{"level":"info","ts":"2025-01-06T14:38:06.082-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA2_CVAVA2_ate"}
+{"level":"info","ts":"2025-01-06T14:38:06.129-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: tks-tstsug08"}
+{"level":"info","ts":"2025-01-06T14:38:06.179-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: tks-tstsug08"}
+{"level":"info","ts":"2025-01-06T14:38:06.232-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T39674_CP01NT_ate"}
+{"level":"info","ts":"2025-01-06T14:38:06.287-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: tks-tsthigh01"}
+{"level":"info","ts":"2025-01-06T14:38:06.340-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TCHRIS_CCHRIS_ate"}
+{"level":"info","ts":"2025-01-06T14:38:06.386-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TBRUNO_CBRUNO_ate"}
+{"level":"info","ts":"2025-01-06T14:38:06.434-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TBRUNO_CBRUNO_ate"}
+{"level":"info","ts":"2025-01-06T14:38:06.473-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TBRUNO_CBRUNO_ate"}
+{"level":"info","ts":"2025-01-06T14:38:06.555-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA2_CVAVA2_ate"}
+{"level":"info","ts":"2025-01-06T14:38:06.605-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA4_CVAVA4_ate"}
+{"level":"info","ts":"2025-01-06T14:38:06.641-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA4_CVAVA4_ate"}
+{"level":"info","ts":"2025-01-06T14:38:06.693-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA4_CVAVA4_ate"}
+{"level":"info","ts":"2025-01-06T14:38:06.738-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA4_CVAVA4_ate"}
+{"level":"info","ts":"2025-01-06T14:38:06.776-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA4_CVAVA4_ate"}
+{"level":"info","ts":"2025-01-06T14:38:06.812-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA4_CVAVA4_ate"}
+{"level":"info","ts":"2025-01-06T14:38:06.859-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA4_CVAVA4_ate"}
+{"level":"info","ts":"2025-01-06T14:38:06.905-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA2_CVAVA2_ate"}
+{"level":"info","ts":"2025-01-06T14:38:06.959-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA2_CVAVA2_ate"}
+{"level":"info","ts":"2025-01-06T14:38:07.011-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA4_CVAVA4_ate"}
+{"level":"info","ts":"2025-01-06T14:38:07.067-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA4_CVAVA4_ate"}
+{"level":"info","ts":"2025-01-06T14:38:07.109-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA4_CVAVA4_ate"}
+{"level":"info","ts":"2025-01-06T14:38:07.147-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA2_CVAVA2_ate"}
+{"level":"info","ts":"2025-01-06T14:38:07.202-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA2_CVAVA2_ate"}
+{"level":"info","ts":"2025-01-06T14:38:07.248-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T55659_C72ZT4_ate"}
+{"level":"info","ts":"2025-01-06T14:38:07.293-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TDEVOPS_CDEVOPS_ate"}
+{"level":"info","ts":"2025-01-06T14:38:07.337-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: tks-tstsug08"}
+{"level":"info","ts":"2025-01-06T14:38:07.372-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: tks-tstsug08"}
+{"level":"info","ts":"2025-01-06T14:38:07.498-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: tks-tstsug08"}
+{"level":"info","ts":"2025-01-06T14:38:07.542-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: tks-tsthigh01"}
+{"level":"info","ts":"2025-01-06T14:38:07.586-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: tks-tstsug08"}
+{"level":"info","ts":"2025-01-06T14:38:07.629-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: tks-tstsug08"}
+{"level":"info","ts":"2025-01-06T14:38:07.668-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: tks-tstsug08"}
+{"level":"info","ts":"2025-01-06T14:38:07.708-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: tks-tstsug01"}
+{"level":"info","ts":"2025-01-06T14:38:07.760-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T38486_CAV45N_ate"}
+{"level":"info","ts":"2025-01-06T14:38:07.803-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T47182_C8VSAQ_ate"}
+{"level":"info","ts":"2025-01-06T14:38:07.846-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T47182_C8VSAQ_ate"}
+{"level":"info","ts":"2025-01-06T14:38:07.883-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: tks-t38ce8c"}
+{"level":"info","ts":"2025-01-06T14:38:07.923-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: tks-t38ce8c"}
+{"level":"info","ts":"2025-01-06T14:38:07.962-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: tks-t38ce8c"}
+{"level":"info","ts":"2025-01-06T14:38:08.005-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: tks-t38ce8c"}
+{"level":"info","ts":"2025-01-06T14:38:08.056-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: tks-t38ce8c"}
+{"level":"info","ts":"2025-01-06T14:38:08.115-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TDRDR2_CDRDR2_ate"}
+{"level":"info","ts":"2025-01-06T14:38:08.155-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TDRDR2_CDRDR2_ate"}
+{"level":"info","ts":"2025-01-06T14:38:08.210-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TDRDR2_CDRDR2_ate"}
+{"level":"info","ts":"2025-01-06T14:38:08.249-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TDRDR2_CDRDR2_ate"}
+{"level":"info","ts":"2025-01-06T14:38:08.296-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TDRDR2_CDRDR2_ate"}
+{"level":"info","ts":"2025-01-06T14:38:08.335-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TDRDR1_CDRDR1_ate"}
+{"level":"info","ts":"2025-01-06T14:38:08.387-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TDRDR1_CDRDR1_ate"}
+{"level":"info","ts":"2025-01-06T14:38:08.451-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TDRDR1_CDRDR1_ate"}
+{"level":"info","ts":"2025-01-06T14:38:08.509-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TDRDR1_CDRDR1_ate"}
+{"level":"info","ts":"2025-01-06T14:38:08.548-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TDRDR1_CDRDR1_ate"}
+{"level":"info","ts":"2025-01-06T14:38:08.595-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TSILV_CSILV_ate"}
+{"level":"info","ts":"2025-01-06T14:38:08.648-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TSILV_CSILV_ate"}
+{"level":"info","ts":"2025-01-06T14:38:08.684-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T17941_C3R165_ate"}
+{"level":"info","ts":"2025-01-06T14:38:08.719-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T17941_C3R165_ate"}
+{"level":"info","ts":"2025-01-06T14:38:08.754-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T17941_C3R165_ate"}
+{"level":"info","ts":"2025-01-06T14:38:08.792-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T17941_C3R165_ate"}
+{"level":"info","ts":"2025-01-06T14:38:08.833-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T17941_C3R165_ate"}
+{"level":"info","ts":"2025-01-06T14:38:08.871-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TFDDPR_CWLSN8_ate"}
+{"level":"info","ts":"2025-01-06T14:38:08.913-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TFDDPR_CWLSN8_ate"}
+{"level":"info","ts":"2025-01-06T14:38:08.957-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TFDDEF_CREW2F_ate"}
+{"level":"info","ts":"2025-01-06T14:38:09.014-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TFDDEF_CREW2F_ate"}
+{"level":"info","ts":"2025-01-06T14:38:09.054-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T22498_C7XU0K_ate"}
+{"level":"info","ts":"2025-01-06T14:38:09.105-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T22498_C7XU0K_ate"}
+{"level":"info","ts":"2025-01-06T14:38:09.148-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: tks-tstdan33"}
+{"level":"info","ts":"2025-01-06T14:38:09.203-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: tks-tstdan33"}
+{"level":"info","ts":"2025-01-06T14:38:09.244-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TDRDR1_CDRDR1_ate"}
+{"level":"info","ts":"2025-01-06T14:38:09.301-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TDRDR1_CDRDR1_ate"}
+{"level":"info","ts":"2025-01-06T14:38:09.349-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TDRDR1_CDRDR1_ate"}
+{"level":"info","ts":"2025-01-06T14:38:09.394-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TDRDR1_CDRDR1_ate"}
+{"level":"info","ts":"2025-01-06T14:38:09.431-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TDRDR1_CDRDR1_ate"}
+{"level":"info","ts":"2025-01-06T14:38:09.485-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TDRDR1_CDRDR1_ate"}
+{"level":"info","ts":"2025-01-06T14:38:09.535-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TDRDR3_CDRDR3_ate"}
+{"level":"info","ts":"2025-01-06T14:38:09.585-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TDRDR2_CDRDR2_ate"}
+{"level":"info","ts":"2025-01-06T14:38:09.653-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TDRDR2_CDRDR2_ate"}
+{"level":"info","ts":"2025-01-06T14:38:09.695-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T05890_C4XC0V_ate"}
+{"level":"info","ts":"2025-01-06T14:38:09.742-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T05890_C4XC0V_ate"}
+{"level":"info","ts":"2025-01-06T14:38:09.782-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T05890_C4XC0V_ate"}
+{"level":"info","ts":"2025-01-06T14:38:09.821-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T05890_C4XC0V_ate"}
+{"level":"info","ts":"2025-01-06T14:38:09.857-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T05890_C4XC0V_ate"}
+{"level":"info","ts":"2025-01-06T14:38:09.947-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T46457_CHLJT6_ate"}
+{"level":"info","ts":"2025-01-06T14:38:09.982-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T46457_CHLJT6_ate"}
+{"level":"info","ts":"2025-01-06T14:38:10.030-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T46457_CHLJT6_ate"}
+{"level":"info","ts":"2025-01-06T14:38:10.064-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T46457_CHLJT6_ate"}
+{"level":"info","ts":"2025-01-06T14:38:10.102-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T46457_CHLJT6_ate"}
+{"level":"info","ts":"2025-01-06T14:38:10.140-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TFCQWU_C6YDRH_ate"}
+{"level":"info","ts":"2025-01-06T14:38:10.178-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TEXNA6_CYVFOG_ate"}
+{"level":"info","ts":"2025-01-06T14:38:10.224-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TEXNA6_CYVFOG_ate"}
+{"level":"info","ts":"2025-01-06T14:38:10.265-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TEXNA6_CYVFOG_ate"}
+{"level":"info","ts":"2025-01-06T14:38:10.312-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TFCJMI_C2O381_ate"}
+{"level":"info","ts":"2025-01-06T14:38:10.350-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TFCJMI_C2O381_ate"}
+{"level":"info","ts":"2025-01-06T14:38:10.386-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TDBAAS_CDBAAS_ate"}
+{"level":"info","ts":"2025-01-06T14:38:10.420-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TDBAAS_CDBAAS_ate"}
+{"level":"info","ts":"2025-01-06T14:38:10.455-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TDBAAS_CDBAAS_ate"}
+{"level":"info","ts":"2025-01-06T14:38:10.492-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T04165_CBPFNQ_ate"}
+{"level":"info","ts":"2025-01-06T14:38:10.554-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T04165_CBPFNQ_ate"}
+{"level":"info","ts":"2025-01-06T14:38:10.593-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T04165_CBPFNQ_ate"}
+{"level":"info","ts":"2025-01-06T14:38:10.641-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T04165_CBPFNQ_ate"}
+{"level":"info","ts":"2025-01-06T14:38:10.686-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T04165_CBPFNQ_ate"}
+{"level":"info","ts":"2025-01-06T14:38:10.730-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T04165_CBPFNQ_ate"}
+{"level":"info","ts":"2025-01-06T14:38:10.784-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T04165_CBPFNQ_ate"}
+{"level":"info","ts":"2025-01-06T14:38:10.829-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T04165_CBPFNQ_ate"}
+{"level":"info","ts":"2025-01-06T14:38:10.873-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T04165_CBPFNQ_ate"}
+{"level":"info","ts":"2025-01-06T14:38:10.918-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T32287_CTYJZV_ate"}
+{"level":"info","ts":"2025-01-06T14:38:10.966-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T32287_CTYJZV_ate"}
+{"level":"info","ts":"2025-01-06T14:38:11.005-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T32287_CTYJZV_ate"}
+{"level":"info","ts":"2025-01-06T14:38:11.047-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T32287_CTYJZV_ate"}
+{"level":"info","ts":"2025-01-06T14:38:11.103-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T32287_CTYJZV_ate"}
+{"level":"info","ts":"2025-01-06T14:38:11.103-0300","caller":"utils/csvmanager.go:34","msg":"Data successfully saved to CSV file"}
+{"level":"info","ts":"2025-01-06T14:38:11.103-0300","caller":"controllers/controller.go:202","msg":"Successfully updated LB service names","total_records":176,"output_file":"diff_updated.csv"}
+{"level":"info","ts":"2025-01-06T15:16:00.621-0300","caller":"nsxt-vs/main.go:48","msg":"Starting server on port 4040"}
+{"level":"error","ts":"2025-01-06T15:16:04.091-0300","caller":"controllers/controller.go:92","msg":"Failed to read diff CSV file","error":"record on line 2: wrong number of fields","stacktrace":"github.com/chmenegatti/nsxt-vs/controllers.(*CSVController).GetDiff\n\t/home/cesar/go/src/nsxt-vs/controllers/controller.go:92\ngithub.com/labstack/echo/v4.(*Echo).add.func1\n\t/home/cesar/.asdf/installs/golang/1.23.2/packages/pkg/mod/github.com/labstack/echo/v4@v4.13.3/echo.go:581\ngithub.com/labstack/echo/v4/middleware.CORSWithConfig.func1.1\n\t/home/cesar/.asdf/installs/golang/1.23.2/packages/pkg/mod/github.com/labstack/echo/v4@v4.13.3/middleware/cors.go:215\ngithub.com/labstack/echo/v4/middleware.RecoverWithConfig.func1.1\n\t/home/cesar/.asdf/installs/golang/1.23.2/packages/pkg/mod/github.com/labstack/echo/v4@v4.13.3/middleware/recover.go:130\ngithub.com/labstack/echo/v4/middleware.LoggerWithConfig.func2.1\n\t/home/cesar/.asdf/installs/golang/1.23.2/packages/pkg/mod/github.com/labstack/echo/v4@v4.13.3/middleware/logger.go:125\ngithub.com/labstack/echo/v4.(*Echo).ServeHTTP\n\t/home/cesar/.asdf/installs/golang/1.23.2/packages/pkg/mod/github.com/labstack/echo/v4@v4.13.3/echo.go:668\nnet/http.serverHandler.ServeHTTP\n\t/home/cesar/.asdf/installs/golang/1.23.2/go/src/net/http/server.go:3210\nnet/http.(*conn).serve\n\t/home/cesar/.asdf/installs/golang/1.23.2/go/src/net/http/server.go:2092"}
+{"level":"error","ts":"2025-01-06T15:17:16.944-0300","caller":"controllers/controller.go:92","msg":"Failed to read diff CSV file","error":"record on line 2: wrong number of fields","stacktrace":"github.com/chmenegatti/nsxt-vs/controllers.(*CSVController).GetDiff\n\t/home/cesar/go/src/nsxt-vs/controllers/controller.go:92\ngithub.com/labstack/echo/v4.(*Echo).add.func1\n\t/home/cesar/.asdf/installs/golang/1.23.2/packages/pkg/mod/github.com/labstack/echo/v4@v4.13.3/echo.go:581\ngithub.com/labstack/echo/v4/middleware.CORSWithConfig.func1.1\n\t/home/cesar/.asdf/installs/golang/1.23.2/packages/pkg/mod/github.com/labstack/echo/v4@v4.13.3/middleware/cors.go:215\ngithub.com/labstack/echo/v4/middleware.RecoverWithConfig.func1.1\n\t/home/cesar/.asdf/installs/golang/1.23.2/packages/pkg/mod/github.com/labstack/echo/v4@v4.13.3/middleware/recover.go:130\ngithub.com/labstack/echo/v4/middleware.LoggerWithConfig.func2.1\n\t/home/cesar/.asdf/installs/golang/1.23.2/packages/pkg/mod/github.com/labstack/echo/v4@v4.13.3/middleware/logger.go:125\ngithub.com/labstack/echo/v4.(*Echo).ServeHTTP\n\t/home/cesar/.asdf/installs/golang/1.23.2/packages/pkg/mod/github.com/labstack/echo/v4@v4.13.3/echo.go:668\nnet/http.serverHandler.ServeHTTP\n\t/home/cesar/.asdf/installs/golang/1.23.2/go/src/net/http/server.go:3210\nnet/http.(*conn).serve\n\t/home/cesar/.asdf/installs/golang/1.23.2/go/src/net/http/server.go:2092"}
+{"level":"info","ts":"2025-01-06T15:18:09.058-0300","caller":"nsxt-vs/main.go:48","msg":"Starting server on port 4040"}
+{"level":"error","ts":"2025-01-06T15:18:30.689-0300","caller":"controllers/controller.go:92","msg":"Failed to read diff CSV file","error":"record on line 2: wrong number of fields","stacktrace":"github.com/chmenegatti/nsxt-vs/controllers.(*CSVController).GetDiff\n\t/home/cesar/go/src/nsxt-vs/controllers/controller.go:92\ngithub.com/labstack/echo/v4.(*Echo).add.func1\n\t/home/cesar/.asdf/installs/golang/1.23.2/packages/pkg/mod/github.com/labstack/echo/v4@v4.13.3/echo.go:581\ngithub.com/labstack/echo/v4/middleware.CORSWithConfig.func1.1\n\t/home/cesar/.asdf/installs/golang/1.23.2/packages/pkg/mod/github.com/labstack/echo/v4@v4.13.3/middleware/cors.go:215\ngithub.com/labstack/echo/v4/middleware.RecoverWithConfig.func1.1\n\t/home/cesar/.asdf/installs/golang/1.23.2/packages/pkg/mod/github.com/labstack/echo/v4@v4.13.3/middleware/recover.go:130\ngithub.com/labstack/echo/v4/middleware.LoggerWithConfig.func2.1\n\t/home/cesar/.asdf/installs/golang/1.23.2/packages/pkg/mod/github.com/labstack/echo/v4@v4.13.3/middleware/logger.go:125\ngithub.com/labstack/echo/v4.(*Echo).ServeHTTP\n\t/home/cesar/.asdf/installs/golang/1.23.2/packages/pkg/mod/github.com/labstack/echo/v4@v4.13.3/echo.go:668\nnet/http.serverHandler.ServeHTTP\n\t/home/cesar/.asdf/installs/golang/1.23.2/go/src/net/http/server.go:3210\nnet/http.(*conn).serve\n\t/home/cesar/.asdf/installs/golang/1.23.2/go/src/net/http/server.go:2092"}
+{"level":"info","ts":"2025-01-06T15:18:39.889-0300","caller":"nsxt-vs/main.go:48","msg":"Starting server on port 4040"}
+{"level":"info","ts":"2025-01-06T15:20:49.203-0300","caller":"utils/csvmanager.go:34","msg":"Data successfully saved to CSV file"}
+{"level":"info","ts":"2025-01-06T15:20:49.203-0300","caller":"controllers/controller.go:141","msg":"Load balance data successfully saved to CSV","records":4158,"filename":"vs.csv"}
+{"level":"info","ts":"2025-01-06T15:20:49.888-0300","caller":"nsxt/vs.go:69","msg":"Fetched page of virtual servers","count":1000,"total_so_far":1000}
+{"level":"info","ts":"2025-01-06T15:20:50.666-0300","caller":"nsxt/vs.go:69","msg":"Fetched page of virtual servers","count":1000,"total_so_far":2000}
+{"level":"info","ts":"2025-01-06T15:20:51.335-0300","caller":"nsxt/vs.go:69","msg":"Fetched page of virtual servers","count":1000,"total_so_far":3000}
+{"level":"info","ts":"2025-01-06T15:20:52.013-0300","caller":"nsxt/vs.go:69","msg":"Fetched page of virtual servers","count":1000,"total_so_far":4000}
+{"level":"info","ts":"2025-01-06T15:20:52.584-0300","caller":"nsxt/vs.go:69","msg":"Fetched page of virtual servers","count":326,"total_so_far":4326}
+{"level":"info","ts":"2025-01-06T15:20:52.584-0300","caller":"nsxt/vs.go:87","msg":"Completed fetching all virtual servers","total_records":4326}
+{"level":"info","ts":"2025-01-06T15:20:52.589-0300","caller":"utils/csvmanager.go:34","msg":"Data successfully saved to CSV file"}
+{"level":"info","ts":"2025-01-06T15:20:52.589-0300","caller":"controllers/controller.go:174","msg":"NSXT data successfully saved to CSV","records":4326,"filename":"nsxt.csv"}
+{"level":"info","ts":"2025-01-06T15:20:52.631-0300","caller":"utils/csvmanager.go:34","msg":"Data successfully saved to CSV file"}
+{"level":"info","ts":"2025-01-06T15:20:52.631-0300","caller":"utils/csvmanager.go:102","msg":"Data successfully saved to CSV file - 179 - diff.csv"}
+{"level":"info","ts":"2025-01-06T15:20:52.706-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T16751_CMAFE8_ate"}
+{"level":"info","ts":"2025-01-06T15:20:52.771-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TFCZQB_C2A41I_ate"}
+{"level":"info","ts":"2025-01-06T15:20:52.830-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TFCZX9_C15QCF_ate"}
+{"level":"info","ts":"2025-01-06T15:20:52.942-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TFCD17_CXJZ12_ate"}
+{"level":"info","ts":"2025-01-06T15:20:53.001-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TEZGZL_CA4GFM_ate"}
+{"level":"info","ts":"2025-01-06T15:20:53.067-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TFD156_CMO7CG_ate"}
+{"level":"info","ts":"2025-01-06T15:20:53.122-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TFCZVR_CZTL8K_ate"}
+{"level":"info","ts":"2025-01-06T15:20:53.181-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TFD122_CJEGX4_ate"}
+{"level":"info","ts":"2025-01-06T15:20:53.232-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TFD122_CJEGX4_ate"}
+{"level":"info","ts":"2025-01-06T15:20:53.298-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TFD122_CJEGX4_ate"}
+{"level":"info","ts":"2025-01-06T15:20:53.359-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TFD135_CVJK5N_ate"}
+{"level":"info","ts":"2025-01-06T15:20:53.406-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TFCDSI_CTDOM0_ate"}
+{"level":"info","ts":"2025-01-06T15:20:53.451-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TFCZL9_CLJ4N9_ate"}
+{"level":"info","ts":"2025-01-06T15:20:53.499-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TFDAAC_C20WEY_ate"}
+{"level":"info","ts":"2025-01-06T15:20:53.552-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TFDAAC_C20WEY_ate"}
+{"level":"info","ts":"2025-01-06T15:20:53.608-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA3_CVAVA3_ate"}
+{"level":"info","ts":"2025-01-06T15:20:53.660-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA3_CVAVA3_ate"}
+{"level":"info","ts":"2025-01-06T15:20:53.727-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TFCZUM_COIGCR_ate"}
+{"level":"info","ts":"2025-01-06T15:20:53.790-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TFCZUM_COIGCR_ate"}
+{"level":"info","ts":"2025-01-06T15:20:53.860-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TFCZD4_CARG1J_ate"}
+{"level":"info","ts":"2025-01-06T15:20:53.941-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TEZBD7_CFVD2S_ate"}
+{"level":"info","ts":"2025-01-06T15:20:53.992-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TFCZQA_C4PYFH_ate"}
+{"level":"info","ts":"2025-01-06T15:20:54.072-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TFCZQ7_CQOKCT_ate"}
+{"level":"info","ts":"2025-01-06T15:20:54.117-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: tks-tstsug08"}
+{"level":"info","ts":"2025-01-06T15:20:54.166-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: tks-tstsug08"}
+{"level":"info","ts":"2025-01-06T15:20:54.231-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TFDGXS_CT4DFA_ate"}
+{"level":"info","ts":"2025-01-06T15:20:54.292-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TFDGXS_CT4DFA_ate"}
+{"level":"info","ts":"2025-01-06T15:20:54.350-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T58198_CSW5UQ_ate"}
+{"level":"info","ts":"2025-01-06T15:20:54.408-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T58198_CSW5UQ_ate"}
+{"level":"info","ts":"2025-01-06T15:20:54.470-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T58198_CSW5UQ_ate"}
+{"level":"info","ts":"2025-01-06T15:20:54.520-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T06131_CVORXY_ate"}
+{"level":"info","ts":"2025-01-06T15:20:54.581-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T06131_CVORXY_ate"}
+{"level":"info","ts":"2025-01-06T15:20:54.640-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T06131_CVORXY_ate"}
+{"level":"info","ts":"2025-01-06T15:20:54.682-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TFCZUL_CFSL98_ate"}
+{"level":"info","ts":"2025-01-06T15:20:54.722-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TFCZXC_C210VK_ate"}
+{"level":"info","ts":"2025-01-06T15:20:54.762-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TFCZXE_CE109H_ate"}
+{"level":"info","ts":"2025-01-06T15:20:54.827-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TCLAUDI2_CLAUDI2_ate"}
+{"level":"info","ts":"2025-01-06T15:20:54.873-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TDRDR2_CDRDR2_ate"}
+{"level":"info","ts":"2025-01-06T15:20:54.919-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TCLAUDI2_CLAUDI2_ate"}
+{"level":"info","ts":"2025-01-06T15:20:54.963-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TCLAUDI2_CLAUDI2_ate"}
+{"level":"info","ts":"2025-01-06T15:20:55.009-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TDRDR2_CDRDR2_ate"}
+{"level":"info","ts":"2025-01-06T15:20:55.056-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TCLAUDI2_CLAUDI2_ate"}
+{"level":"info","ts":"2025-01-06T15:20:55.121-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TDATASU2_CDATASU2_ate"}
+{"level":"info","ts":"2025-01-06T15:20:55.161-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TDATASU2_CDATASU2_ate"}
+{"level":"info","ts":"2025-01-06T15:20:55.212-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TDATASU2_CDATASU2_ate"}
+{"level":"info","ts":"2025-01-06T15:20:55.264-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TDATASU2_CDATASU2_ate"}
+{"level":"info","ts":"2025-01-06T15:20:55.310-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TDATASU2_CDATASU2_ate"}
+{"level":"info","ts":"2025-01-06T15:20:55.360-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: tks-tstsug08"}
+{"level":"info","ts":"2025-01-06T15:20:55.414-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T75069_CC54GO_ate"}
+{"level":"info","ts":"2025-01-06T15:20:55.460-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAV10_CVAV10_ate"}
+{"level":"info","ts":"2025-01-06T15:20:55.528-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: tks-tstsug08"}
+{"level":"info","ts":"2025-01-06T15:20:55.580-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAV10_CVAV10_ate"}
+{"level":"info","ts":"2025-01-06T15:20:55.635-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: tks-tstsug08"}
+{"level":"info","ts":"2025-01-06T15:20:55.676-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T75069_CC54GO_ate"}
+{"level":"info","ts":"2025-01-06T15:20:55.733-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA2_CVAVA2_ate"}
+{"level":"info","ts":"2025-01-06T15:20:55.788-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA2_CVAVA2_ate"}
+{"level":"info","ts":"2025-01-06T15:20:55.839-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA2_CVAVA2_ate"}
+{"level":"info","ts":"2025-01-06T15:20:55.886-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA2_CVAVA2_ate"}
+{"level":"info","ts":"2025-01-06T15:20:55.937-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA2_CVAVA2_ate"}
+{"level":"info","ts":"2025-01-06T15:20:55.989-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA2_CVAVA2_ate"}
+{"level":"info","ts":"2025-01-06T15:20:56.035-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA2_CVAVA2_ate"}
+{"level":"info","ts":"2025-01-06T15:20:56.085-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA2_CVAVA2_ate"}
+{"level":"info","ts":"2025-01-06T15:20:56.135-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA2_CVAVA2_ate"}
+{"level":"info","ts":"2025-01-06T15:20:56.178-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: tks-tstdan03"}
+{"level":"info","ts":"2025-01-06T15:20:56.225-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: tks-tstdan03"}
+{"level":"info","ts":"2025-01-06T15:20:56.263-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA2_CVAVA2_ate"}
+{"level":"info","ts":"2025-01-06T15:20:56.338-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA2_CVAVA2_ate"}
+{"level":"info","ts":"2025-01-06T15:20:56.408-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA2_CVAVA2_ate"}
+{"level":"info","ts":"2025-01-06T15:20:56.481-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA2_CVAVA2_ate"}
+{"level":"info","ts":"2025-01-06T15:20:56.538-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA2_CVAVA2_ate"}
+{"level":"info","ts":"2025-01-06T15:20:56.584-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: tks-tstsug08"}
+{"level":"info","ts":"2025-01-06T15:20:56.639-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: tks-tstsug08"}
+{"level":"info","ts":"2025-01-06T15:20:56.696-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T39674_CP01NT_ate"}
+{"level":"info","ts":"2025-01-06T15:20:56.759-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: tks-tsthigh01"}
+{"level":"info","ts":"2025-01-06T15:20:56.813-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TCHRIS_CCHRIS_ate"}
+{"level":"info","ts":"2025-01-06T15:20:56.864-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TBRUNO_CBRUNO_ate"}
+{"level":"info","ts":"2025-01-06T15:20:56.919-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TBRUNO_CBRUNO_ate"}
+{"level":"info","ts":"2025-01-06T15:20:56.984-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TBRUNO_CBRUNO_ate"}
+{"level":"info","ts":"2025-01-06T15:20:57.035-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA2_CVAVA2_ate"}
+{"level":"info","ts":"2025-01-06T15:20:57.096-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA4_CVAVA4_ate"}
+{"level":"info","ts":"2025-01-06T15:20:57.158-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA4_CVAVA4_ate"}
+{"level":"info","ts":"2025-01-06T15:20:57.216-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA4_CVAVA4_ate"}
+{"level":"info","ts":"2025-01-06T15:20:57.259-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA4_CVAVA4_ate"}
+{"level":"info","ts":"2025-01-06T15:20:57.322-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA4_CVAVA4_ate"}
+{"level":"info","ts":"2025-01-06T15:20:57.381-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA4_CVAVA4_ate"}
+{"level":"info","ts":"2025-01-06T15:20:57.449-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA4_CVAVA4_ate"}
+{"level":"info","ts":"2025-01-06T15:20:57.492-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA2_CVAVA2_ate"}
+{"level":"info","ts":"2025-01-06T15:20:57.549-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA2_CVAVA2_ate"}
+{"level":"info","ts":"2025-01-06T15:20:57.613-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA4_CVAVA4_ate"}
+{"level":"info","ts":"2025-01-06T15:20:57.668-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA4_CVAVA4_ate"}
+{"level":"info","ts":"2025-01-06T15:20:57.734-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA4_CVAVA4_ate"}
+{"level":"info","ts":"2025-01-06T15:20:57.797-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA2_CVAVA2_ate"}
+{"level":"info","ts":"2025-01-06T15:20:57.860-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA2_CVAVA2_ate"}
+{"level":"info","ts":"2025-01-06T15:20:57.913-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T55659_C72ZT4_ate"}
+{"level":"info","ts":"2025-01-06T15:20:57.958-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TDEVOPS_CDEVOPS_ate"}
+{"level":"info","ts":"2025-01-06T15:20:58.089-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: tks-tstsug08"}
+{"level":"info","ts":"2025-01-06T15:20:58.141-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: tks-tstsug08"}
+{"level":"info","ts":"2025-01-06T15:20:58.186-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: tks-tstsug08"}
+{"level":"info","ts":"2025-01-06T15:20:58.251-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: tks-tsthigh01"}
+{"level":"info","ts":"2025-01-06T15:20:58.301-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: tks-tstsug08"}
+{"level":"info","ts":"2025-01-06T15:20:58.357-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: tks-tstsug08"}
+{"level":"info","ts":"2025-01-06T15:20:58.406-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: tks-tstsug08"}
+{"level":"info","ts":"2025-01-06T15:20:58.447-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: tks-tstsug01"}
+{"level":"info","ts":"2025-01-06T15:20:58.489-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T38486_CAV45N_ate"}
+{"level":"info","ts":"2025-01-06T15:20:58.532-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T47182_C8VSAQ_ate"}
+{"level":"info","ts":"2025-01-06T15:20:58.572-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T47182_C8VSAQ_ate"}
+{"level":"info","ts":"2025-01-06T15:20:58.611-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: tks-t38ce8c"}
+{"level":"info","ts":"2025-01-06T15:20:58.673-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: tks-t38ce8c"}
+{"level":"info","ts":"2025-01-06T15:20:58.719-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: tks-t38ce8c"}
+{"level":"info","ts":"2025-01-06T15:20:58.765-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: tks-t38ce8c"}
+{"level":"info","ts":"2025-01-06T15:20:58.806-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: tks-t38ce8c"}
+{"level":"info","ts":"2025-01-06T15:20:58.868-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TDRDR2_CDRDR2_ate"}
+{"level":"info","ts":"2025-01-06T15:20:58.907-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TDRDR2_CDRDR2_ate"}
+{"level":"info","ts":"2025-01-06T15:20:58.956-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TDRDR2_CDRDR2_ate"}
+{"level":"info","ts":"2025-01-06T15:20:59.005-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TDRDR2_CDRDR2_ate"}
+{"level":"info","ts":"2025-01-06T15:20:59.062-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TDRDR2_CDRDR2_ate"}
+{"level":"info","ts":"2025-01-06T15:20:59.116-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TDRDR1_CDRDR1_ate"}
+{"level":"info","ts":"2025-01-06T15:20:59.176-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TDRDR1_CDRDR1_ate"}
+{"level":"info","ts":"2025-01-06T15:20:59.216-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TDRDR1_CDRDR1_ate"}
+{"level":"info","ts":"2025-01-06T15:20:59.264-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TDRDR1_CDRDR1_ate"}
+{"level":"info","ts":"2025-01-06T15:20:59.333-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TDRDR1_CDRDR1_ate"}
+{"level":"info","ts":"2025-01-06T15:20:59.375-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TSILV_CSILV_ate"}
+{"level":"info","ts":"2025-01-06T15:20:59.425-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TSILV_CSILV_ate"}
+{"level":"info","ts":"2025-01-06T15:20:59.496-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T17941_C3R165_ate"}
+{"level":"info","ts":"2025-01-06T15:20:59.551-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T17941_C3R165_ate"}
+{"level":"info","ts":"2025-01-06T15:20:59.597-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T17941_C3R165_ate"}
+{"level":"info","ts":"2025-01-06T15:20:59.682-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T17941_C3R165_ate"}
+{"level":"info","ts":"2025-01-06T15:20:59.720-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T17941_C3R165_ate"}
+{"level":"info","ts":"2025-01-06T15:20:59.774-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TFDDPR_CWLSN8_ate"}
+{"level":"info","ts":"2025-01-06T15:20:59.821-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TFDDPR_CWLSN8_ate"}
+{"level":"info","ts":"2025-01-06T15:20:59.890-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TFDDEF_CREW2F_ate"}
+{"level":"info","ts":"2025-01-06T15:20:59.941-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TFDDEF_CREW2F_ate"}
+{"level":"info","ts":"2025-01-06T15:20:59.993-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T22498_C7XU0K_ate"}
+{"level":"info","ts":"2025-01-06T15:21:00.055-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T22498_C7XU0K_ate"}
+{"level":"info","ts":"2025-01-06T15:21:00.115-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: tks-tstdan33"}
+{"level":"info","ts":"2025-01-06T15:21:00.171-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: tks-tstdan33"}
+{"level":"info","ts":"2025-01-06T15:21:00.216-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TDRDR1_CDRDR1_ate"}
+{"level":"info","ts":"2025-01-06T15:21:00.275-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TDRDR1_CDRDR1_ate"}
+{"level":"info","ts":"2025-01-06T15:21:00.355-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TDRDR1_CDRDR1_ate"}
+{"level":"info","ts":"2025-01-06T15:21:00.417-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TDRDR1_CDRDR1_ate"}
+{"level":"info","ts":"2025-01-06T15:21:00.469-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TDRDR1_CDRDR1_ate"}
+{"level":"info","ts":"2025-01-06T15:21:00.517-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TDRDR1_CDRDR1_ate"}
+{"level":"info","ts":"2025-01-06T15:21:00.602-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TDRDR3_CDRDR3_ate"}
+{"level":"info","ts":"2025-01-06T15:21:00.666-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TDRDR2_CDRDR2_ate"}
+{"level":"info","ts":"2025-01-06T15:21:00.728-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TDRDR2_CDRDR2_ate"}
+{"level":"info","ts":"2025-01-06T15:21:00.797-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T05890_C4XC0V_ate"}
+{"level":"info","ts":"2025-01-06T15:21:00.847-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T05890_C4XC0V_ate"}
+{"level":"info","ts":"2025-01-06T15:21:00.891-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T05890_C4XC0V_ate"}
+{"level":"info","ts":"2025-01-06T15:21:00.938-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T05890_C4XC0V_ate"}
+{"level":"info","ts":"2025-01-06T15:21:00.996-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T05890_C4XC0V_ate"}
+{"level":"info","ts":"2025-01-06T15:21:01.071-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T46457_CHLJT6_ate"}
+{"level":"info","ts":"2025-01-06T15:21:01.136-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T46457_CHLJT6_ate"}
+{"level":"info","ts":"2025-01-06T15:21:01.176-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T46457_CHLJT6_ate"}
+{"level":"info","ts":"2025-01-06T15:21:01.269-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T46457_CHLJT6_ate"}
+{"level":"info","ts":"2025-01-06T15:21:01.324-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T46457_CHLJT6_ate"}
+{"level":"info","ts":"2025-01-06T15:21:01.426-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TFCQWU_C6YDRH_ate"}
+{"level":"info","ts":"2025-01-06T15:21:01.493-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TEXNA6_CYVFOG_ate"}
+{"level":"info","ts":"2025-01-06T15:21:01.587-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TEXNA6_CYVFOG_ate"}
+{"level":"info","ts":"2025-01-06T15:21:01.668-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TEXNA6_CYVFOG_ate"}
+{"level":"info","ts":"2025-01-06T15:21:01.720-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TFCJMI_C2O381_ate"}
+{"level":"info","ts":"2025-01-06T15:21:01.771-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TFCJMI_C2O381_ate"}
+{"level":"info","ts":"2025-01-06T15:21:01.838-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TDBAAS_CDBAAS_ate"}
+{"level":"info","ts":"2025-01-06T15:21:01.886-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TDBAAS_CDBAAS_ate"}
+{"level":"info","ts":"2025-01-06T15:21:01.943-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TDBAAS_CDBAAS_ate"}
+{"level":"info","ts":"2025-01-06T15:21:01.993-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T04165_CBPFNQ_ate"}
+{"level":"info","ts":"2025-01-06T15:21:02.052-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T04165_CBPFNQ_ate"}
+{"level":"info","ts":"2025-01-06T15:21:02.098-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T04165_CBPFNQ_ate"}
+{"level":"info","ts":"2025-01-06T15:21:02.142-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T04165_CBPFNQ_ate"}
+{"level":"info","ts":"2025-01-06T15:21:02.183-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T04165_CBPFNQ_ate"}
+{"level":"info","ts":"2025-01-06T15:21:02.227-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T04165_CBPFNQ_ate"}
+{"level":"info","ts":"2025-01-06T15:21:02.269-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T04165_CBPFNQ_ate"}
+{"level":"info","ts":"2025-01-06T15:21:02.311-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T04165_CBPFNQ_ate"}
+{"level":"info","ts":"2025-01-06T15:21:02.359-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T04165_CBPFNQ_ate"}
+{"level":"info","ts":"2025-01-06T15:21:02.402-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T32287_CTYJZV_ate"}
+{"level":"info","ts":"2025-01-06T15:21:02.445-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T32287_CTYJZV_ate"}
+{"level":"info","ts":"2025-01-06T15:21:02.501-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T32287_CTYJZV_ate"}
+{"level":"info","ts":"2025-01-06T15:21:02.573-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T32287_CTYJZV_ate"}
+{"level":"info","ts":"2025-01-06T15:21:02.622-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T32287_CTYJZV_ate"}
+{"level":"info","ts":"2025-01-06T15:21:02.622-0300","caller":"utils/csvmanager.go:34","msg":"Data successfully saved to CSV file"}
+{"level":"info","ts":"2025-01-06T15:21:02.623-0300","caller":"controllers/controller.go:246","msg":"Successfully updated LB service names","total_records":178,"output_file":"diff_updated.csv"}
+{"level":"info","ts":"2025-01-06T15:22:08.352-0300","caller":"nsxt-vs/main.go:48","msg":"Starting server on port 4040"}
+{"level":"info","ts":"2025-01-06T15:23:32.599-0300","caller":"utils/csvmanager.go:34","msg":"Data successfully saved to CSV file"}
+{"level":"info","ts":"2025-01-06T15:23:32.599-0300","caller":"controllers/controller.go:141","msg":"Load balance data successfully saved to CSV","records":4158,"filename":"vs.csv"}
+{"level":"info","ts":"2025-01-06T15:23:34.257-0300","caller":"nsxt/vs.go:69","msg":"Fetched page of virtual servers","count":1000,"total_so_far":1000}
+{"level":"info","ts":"2025-01-06T15:23:35.106-0300","caller":"nsxt/vs.go:69","msg":"Fetched page of virtual servers","count":1000,"total_so_far":2000}
+{"level":"info","ts":"2025-01-06T15:23:35.791-0300","caller":"nsxt/vs.go:69","msg":"Fetched page of virtual servers","count":1000,"total_so_far":3000}
+{"level":"info","ts":"2025-01-06T15:23:36.494-0300","caller":"nsxt/vs.go:69","msg":"Fetched page of virtual servers","count":1000,"total_so_far":4000}
+{"level":"info","ts":"2025-01-06T15:23:37.100-0300","caller":"nsxt/vs.go:69","msg":"Fetched page of virtual servers","count":326,"total_so_far":4326}
+{"level":"info","ts":"2025-01-06T15:23:37.100-0300","caller":"nsxt/vs.go:87","msg":"Completed fetching all virtual servers","total_records":4326}
+{"level":"info","ts":"2025-01-06T15:23:37.103-0300","caller":"utils/csvmanager.go:34","msg":"Data successfully saved to CSV file"}
+{"level":"info","ts":"2025-01-06T15:23:37.103-0300","caller":"controllers/controller.go:174","msg":"NSXT data successfully saved to CSV","records":4326,"filename":"nsxt.csv"}
+{"level":"info","ts":"2025-01-06T15:23:37.133-0300","caller":"utils/csvmanager.go:34","msg":"Data successfully saved to CSV file"}
+{"level":"info","ts":"2025-01-06T15:23:37.134-0300","caller":"utils/csvmanager.go:102","msg":"Data successfully saved to CSV file - 179 - diff.csv"}
+{"level":"info","ts":"2025-01-06T15:23:37.196-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T16751_CMAFE8_ate"}
+{"level":"info","ts":"2025-01-06T15:23:37.272-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TFCZQB_C2A41I_ate"}
+{"level":"info","ts":"2025-01-06T15:23:37.316-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TFCZX9_C15QCF_ate"}
+{"level":"info","ts":"2025-01-06T15:23:37.357-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TFCD17_CXJZ12_ate"}
+{"level":"info","ts":"2025-01-06T15:23:37.414-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TEZGZL_CA4GFM_ate"}
+{"level":"info","ts":"2025-01-06T15:23:37.481-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TFD156_CMO7CG_ate"}
+{"level":"info","ts":"2025-01-06T15:23:37.527-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TFCZVR_CZTL8K_ate"}
+{"level":"info","ts":"2025-01-06T15:23:37.577-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TFD122_CJEGX4_ate"}
+{"level":"info","ts":"2025-01-06T15:23:37.651-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TFD122_CJEGX4_ate"}
+{"level":"info","ts":"2025-01-06T15:23:37.713-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TFD122_CJEGX4_ate"}
+{"level":"info","ts":"2025-01-06T15:23:37.784-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TFD135_CVJK5N_ate"}
+{"level":"info","ts":"2025-01-06T15:23:37.844-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TFCDSI_CTDOM0_ate"}
+{"level":"info","ts":"2025-01-06T15:23:37.909-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TFCZL9_CLJ4N9_ate"}
+{"level":"info","ts":"2025-01-06T15:23:37.962-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TFDAAC_C20WEY_ate"}
+{"level":"info","ts":"2025-01-06T15:23:38.023-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TFDAAC_C20WEY_ate"}
+{"level":"info","ts":"2025-01-06T15:23:38.085-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA3_CVAVA3_ate"}
+{"level":"info","ts":"2025-01-06T15:23:38.146-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA3_CVAVA3_ate"}
+{"level":"info","ts":"2025-01-06T15:23:38.192-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TFCZUM_COIGCR_ate"}
+{"level":"info","ts":"2025-01-06T15:23:38.269-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TFCZUM_COIGCR_ate"}
+{"level":"info","ts":"2025-01-06T15:23:38.314-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TFCZD4_CARG1J_ate"}
+{"level":"info","ts":"2025-01-06T15:23:38.378-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TEZBD7_CFVD2S_ate"}
+{"level":"info","ts":"2025-01-06T15:23:38.440-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TFCZQA_C4PYFH_ate"}
+{"level":"info","ts":"2025-01-06T15:23:38.486-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TFCZQ7_CQOKCT_ate"}
+{"level":"info","ts":"2025-01-06T15:23:38.542-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: tks-tstsug08"}
+{"level":"info","ts":"2025-01-06T15:23:38.579-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: tks-tstsug08"}
+{"level":"info","ts":"2025-01-06T15:23:38.631-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TFDGXS_CT4DFA_ate"}
+{"level":"info","ts":"2025-01-06T15:23:38.678-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TFDGXS_CT4DFA_ate"}
+{"level":"info","ts":"2025-01-06T15:23:38.727-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T58198_CSW5UQ_ate"}
+{"level":"info","ts":"2025-01-06T15:23:38.778-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T58198_CSW5UQ_ate"}
+{"level":"info","ts":"2025-01-06T15:23:38.818-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T58198_CSW5UQ_ate"}
+{"level":"info","ts":"2025-01-06T15:23:38.860-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T06131_CVORXY_ate"}
+{"level":"info","ts":"2025-01-06T15:23:38.908-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T06131_CVORXY_ate"}
+{"level":"info","ts":"2025-01-06T15:23:38.958-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T06131_CVORXY_ate"}
+{"level":"info","ts":"2025-01-06T15:23:39.003-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TFCZUL_CFSL98_ate"}
+{"level":"info","ts":"2025-01-06T15:23:39.075-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TFCZXC_C210VK_ate"}
+{"level":"info","ts":"2025-01-06T15:23:39.135-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TFCZXE_CE109H_ate"}
+{"level":"info","ts":"2025-01-06T15:23:39.178-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TCLAUDI2_CLAUDI2_ate"}
+{"level":"info","ts":"2025-01-06T15:23:39.259-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TDRDR2_CDRDR2_ate"}
+{"level":"info","ts":"2025-01-06T15:23:39.331-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TCLAUDI2_CLAUDI2_ate"}
+{"level":"info","ts":"2025-01-06T15:23:39.378-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TCLAUDI2_CLAUDI2_ate"}
+{"level":"info","ts":"2025-01-06T15:23:39.451-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TDRDR2_CDRDR2_ate"}
+{"level":"info","ts":"2025-01-06T15:23:39.501-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TCLAUDI2_CLAUDI2_ate"}
+{"level":"info","ts":"2025-01-06T15:23:39.547-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TDATASU2_CDATASU2_ate"}
+{"level":"info","ts":"2025-01-06T15:23:39.583-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TDATASU2_CDATASU2_ate"}
+{"level":"info","ts":"2025-01-06T15:23:39.639-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TDATASU2_CDATASU2_ate"}
+{"level":"info","ts":"2025-01-06T15:23:39.692-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TDATASU2_CDATASU2_ate"}
+{"level":"info","ts":"2025-01-06T15:23:39.737-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TDATASU2_CDATASU2_ate"}
+{"level":"info","ts":"2025-01-06T15:23:39.800-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: tks-tstsug08"}
+{"level":"info","ts":"2025-01-06T15:23:39.843-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T75069_CC54GO_ate"}
+{"level":"info","ts":"2025-01-06T15:23:39.899-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAV10_CVAV10_ate"}
+{"level":"info","ts":"2025-01-06T15:23:39.942-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: tks-tstsug08"}
+{"level":"info","ts":"2025-01-06T15:23:39.992-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAV10_CVAV10_ate"}
+{"level":"info","ts":"2025-01-06T15:23:40.051-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: tks-tstsug08"}
+{"level":"info","ts":"2025-01-06T15:23:40.109-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T75069_CC54GO_ate"}
+{"level":"info","ts":"2025-01-06T15:23:40.165-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA2_CVAVA2_ate"}
+{"level":"info","ts":"2025-01-06T15:23:40.211-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA2_CVAVA2_ate"}
+{"level":"info","ts":"2025-01-06T15:23:40.267-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA2_CVAVA2_ate"}
+{"level":"info","ts":"2025-01-06T15:23:40.331-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA2_CVAVA2_ate"}
+{"level":"info","ts":"2025-01-06T15:23:40.379-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA2_CVAVA2_ate"}
+{"level":"info","ts":"2025-01-06T15:23:40.430-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA2_CVAVA2_ate"}
+{"level":"info","ts":"2025-01-06T15:23:40.477-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA2_CVAVA2_ate"}
+{"level":"info","ts":"2025-01-06T15:23:40.520-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA2_CVAVA2_ate"}
+{"level":"info","ts":"2025-01-06T15:23:40.584-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA2_CVAVA2_ate"}
+{"level":"info","ts":"2025-01-06T15:23:40.636-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: tks-tstdan03"}
+{"level":"info","ts":"2025-01-06T15:23:40.682-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: tks-tstdan03"}
+{"level":"info","ts":"2025-01-06T15:23:40.749-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA2_CVAVA2_ate"}
+{"level":"info","ts":"2025-01-06T15:23:40.802-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA2_CVAVA2_ate"}
+{"level":"info","ts":"2025-01-06T15:23:40.880-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA2_CVAVA2_ate"}
+{"level":"info","ts":"2025-01-06T15:23:40.925-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA2_CVAVA2_ate"}
+{"level":"info","ts":"2025-01-06T15:23:40.991-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA2_CVAVA2_ate"}
+{"level":"info","ts":"2025-01-06T15:23:41.032-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: tks-tstsug08"}
+{"level":"info","ts":"2025-01-06T15:23:41.088-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: tks-tstsug08"}
+{"level":"info","ts":"2025-01-06T15:23:41.146-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T39674_CP01NT_ate"}
+{"level":"info","ts":"2025-01-06T15:23:41.193-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: tks-tsthigh01"}
+{"level":"info","ts":"2025-01-06T15:23:41.242-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TCHRIS_CCHRIS_ate"}
+{"level":"info","ts":"2025-01-06T15:23:41.287-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TBRUNO_CBRUNO_ate"}
+{"level":"info","ts":"2025-01-06T15:23:41.341-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TBRUNO_CBRUNO_ate"}
+{"level":"info","ts":"2025-01-06T15:23:41.384-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TBRUNO_CBRUNO_ate"}
+{"level":"info","ts":"2025-01-06T15:23:41.441-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA2_CVAVA2_ate"}
+{"level":"info","ts":"2025-01-06T15:23:41.488-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA4_CVAVA4_ate"}
+{"level":"info","ts":"2025-01-06T15:23:41.542-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA4_CVAVA4_ate"}
+{"level":"info","ts":"2025-01-06T15:23:41.583-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA4_CVAVA4_ate"}
+{"level":"info","ts":"2025-01-06T15:23:41.635-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA4_CVAVA4_ate"}
+{"level":"info","ts":"2025-01-06T15:23:41.688-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA4_CVAVA4_ate"}
+{"level":"info","ts":"2025-01-06T15:23:41.746-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA4_CVAVA4_ate"}
+{"level":"info","ts":"2025-01-06T15:23:41.808-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA4_CVAVA4_ate"}
+{"level":"info","ts":"2025-01-06T15:23:41.855-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA2_CVAVA2_ate"}
+{"level":"info","ts":"2025-01-06T15:23:41.899-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA2_CVAVA2_ate"}
+{"level":"info","ts":"2025-01-06T15:23:41.956-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA4_CVAVA4_ate"}
+{"level":"info","ts":"2025-01-06T15:23:42.019-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA4_CVAVA4_ate"}
+{"level":"info","ts":"2025-01-06T15:23:42.071-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA4_CVAVA4_ate"}
+{"level":"info","ts":"2025-01-06T15:23:42.125-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA2_CVAVA2_ate"}
+{"level":"info","ts":"2025-01-06T15:23:42.179-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TVAVA2_CVAVA2_ate"}
+{"level":"info","ts":"2025-01-06T15:23:42.226-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T55659_C72ZT4_ate"}
+{"level":"info","ts":"2025-01-06T15:23:42.286-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TDEVOPS_CDEVOPS_ate"}
+{"level":"info","ts":"2025-01-06T15:23:42.446-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: tks-tstsug08"}
+{"level":"info","ts":"2025-01-06T15:23:42.489-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: tks-tstsug08"}
+{"level":"info","ts":"2025-01-06T15:23:42.539-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: tks-tstsug08"}
+{"level":"info","ts":"2025-01-06T15:23:42.601-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: tks-tsthigh01"}
+{"level":"info","ts":"2025-01-06T15:23:42.647-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: tks-tstsug08"}
+{"level":"info","ts":"2025-01-06T15:23:42.705-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: tks-tstsug08"}
+{"level":"info","ts":"2025-01-06T15:23:42.769-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: tks-tstsug08"}
+{"level":"info","ts":"2025-01-06T15:23:42.818-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: tks-tstsug01"}
+{"level":"info","ts":"2025-01-06T15:23:42.858-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T38486_CAV45N_ate"}
+{"level":"info","ts":"2025-01-06T15:23:42.926-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T47182_C8VSAQ_ate"}
+{"level":"info","ts":"2025-01-06T15:23:42.985-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T47182_C8VSAQ_ate"}
+{"level":"info","ts":"2025-01-06T15:23:43.034-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: tks-t38ce8c"}
+{"level":"info","ts":"2025-01-06T15:23:43.108-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: tks-t38ce8c"}
+{"level":"info","ts":"2025-01-06T15:23:43.172-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: tks-t38ce8c"}
+{"level":"info","ts":"2025-01-06T15:23:43.237-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: tks-t38ce8c"}
+{"level":"info","ts":"2025-01-06T15:23:43.294-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: tks-t38ce8c"}
+{"level":"info","ts":"2025-01-06T15:23:43.363-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TDRDR2_CDRDR2_ate"}
+{"level":"info","ts":"2025-01-06T15:23:43.429-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TDRDR2_CDRDR2_ate"}
+{"level":"info","ts":"2025-01-06T15:23:43.490-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TDRDR2_CDRDR2_ate"}
+{"level":"info","ts":"2025-01-06T15:23:43.538-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TDRDR2_CDRDR2_ate"}
+{"level":"info","ts":"2025-01-06T15:23:43.595-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TDRDR2_CDRDR2_ate"}
+{"level":"info","ts":"2025-01-06T15:23:43.642-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TDRDR1_CDRDR1_ate"}
+{"level":"info","ts":"2025-01-06T15:23:43.693-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TDRDR1_CDRDR1_ate"}
+{"level":"info","ts":"2025-01-06T15:23:43.756-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TDRDR1_CDRDR1_ate"}
+{"level":"info","ts":"2025-01-06T15:23:43.798-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TDRDR1_CDRDR1_ate"}
+{"level":"info","ts":"2025-01-06T15:23:43.847-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TDRDR1_CDRDR1_ate"}
+{"level":"info","ts":"2025-01-06T15:23:43.946-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TSILV_CSILV_ate"}
+{"level":"info","ts":"2025-01-06T15:23:43.999-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TSILV_CSILV_ate"}
+{"level":"info","ts":"2025-01-06T15:23:44.060-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T17941_C3R165_ate"}
+{"level":"info","ts":"2025-01-06T15:23:44.129-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T17941_C3R165_ate"}
+{"level":"info","ts":"2025-01-06T15:23:44.191-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T17941_C3R165_ate"}
+{"level":"info","ts":"2025-01-06T15:23:44.243-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T17941_C3R165_ate"}
+{"level":"info","ts":"2025-01-06T15:23:44.292-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T17941_C3R165_ate"}
+{"level":"info","ts":"2025-01-06T15:23:44.341-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TFDDPR_CWLSN8_ate"}
+{"level":"info","ts":"2025-01-06T15:23:44.393-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TFDDPR_CWLSN8_ate"}
+{"level":"info","ts":"2025-01-06T15:23:44.438-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TFDDEF_CREW2F_ate"}
+{"level":"info","ts":"2025-01-06T15:23:44.486-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TFDDEF_CREW2F_ate"}
+{"level":"info","ts":"2025-01-06T15:23:44.532-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T22498_C7XU0K_ate"}
+{"level":"info","ts":"2025-01-06T15:23:44.590-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T22498_C7XU0K_ate"}
+{"level":"info","ts":"2025-01-06T15:23:44.649-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: tks-tstdan33"}
+{"level":"info","ts":"2025-01-06T15:23:44.702-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: tks-tstdan33"}
+{"level":"info","ts":"2025-01-06T15:23:44.745-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TDRDR1_CDRDR1_ate"}
+{"level":"info","ts":"2025-01-06T15:23:44.816-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TDRDR1_CDRDR1_ate"}
+{"level":"info","ts":"2025-01-06T15:23:44.873-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TDRDR1_CDRDR1_ate"}
+{"level":"info","ts":"2025-01-06T15:23:44.929-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TDRDR1_CDRDR1_ate"}
+{"level":"info","ts":"2025-01-06T15:23:44.994-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TDRDR1_CDRDR1_ate"}
+{"level":"info","ts":"2025-01-06T15:23:45.045-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TDRDR1_CDRDR1_ate"}
+{"level":"info","ts":"2025-01-06T15:23:45.096-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TDRDR3_CDRDR3_ate"}
+{"level":"info","ts":"2025-01-06T15:23:45.143-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TDRDR2_CDRDR2_ate"}
+{"level":"info","ts":"2025-01-06T15:23:45.200-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TDRDR2_CDRDR2_ate"}
+{"level":"info","ts":"2025-01-06T15:23:45.258-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T05890_C4XC0V_ate"}
+{"level":"info","ts":"2025-01-06T15:23:45.324-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T05890_C4XC0V_ate"}
+{"level":"info","ts":"2025-01-06T15:23:45.370-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T05890_C4XC0V_ate"}
+{"level":"info","ts":"2025-01-06T15:23:45.436-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T05890_C4XC0V_ate"}
+{"level":"info","ts":"2025-01-06T15:23:45.479-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T05890_C4XC0V_ate"}
+{"level":"info","ts":"2025-01-06T15:23:45.534-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T46457_CHLJT6_ate"}
+{"level":"info","ts":"2025-01-06T15:23:45.579-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T46457_CHLJT6_ate"}
+{"level":"info","ts":"2025-01-06T15:23:45.639-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T46457_CHLJT6_ate"}
+{"level":"info","ts":"2025-01-06T15:23:45.713-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T46457_CHLJT6_ate"}
+{"level":"info","ts":"2025-01-06T15:23:45.754-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T46457_CHLJT6_ate"}
+{"level":"info","ts":"2025-01-06T15:23:45.815-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TFCQWU_C6YDRH_ate"}
+{"level":"info","ts":"2025-01-06T15:23:45.888-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TEXNA6_CYVFOG_ate"}
+{"level":"info","ts":"2025-01-06T15:23:45.956-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TEXNA6_CYVFOG_ate"}
+{"level":"info","ts":"2025-01-06T15:23:46.006-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TEXNA6_CYVFOG_ate"}
+{"level":"info","ts":"2025-01-06T15:23:46.049-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TFCJMI_C2O381_ate"}
+{"level":"info","ts":"2025-01-06T15:23:46.104-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TFCJMI_C2O381_ate"}
+{"level":"info","ts":"2025-01-06T15:23:46.169-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TDBAAS_CDBAAS_ate"}
+{"level":"info","ts":"2025-01-06T15:23:46.230-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TDBAAS_CDBAAS_ate"}
+{"level":"info","ts":"2025-01-06T15:23:46.283-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: TDBAAS_CDBAAS_ate"}
+{"level":"info","ts":"2025-01-06T15:23:46.330-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T04165_CBPFNQ_ate"}
+{"level":"info","ts":"2025-01-06T15:23:46.382-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T04165_CBPFNQ_ate"}
+{"level":"info","ts":"2025-01-06T15:23:46.451-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T04165_CBPFNQ_ate"}
+{"level":"info","ts":"2025-01-06T15:23:46.495-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T04165_CBPFNQ_ate"}
+{"level":"info","ts":"2025-01-06T15:23:46.538-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T04165_CBPFNQ_ate"}
+{"level":"info","ts":"2025-01-06T15:23:46.587-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T04165_CBPFNQ_ate"}
+{"level":"info","ts":"2025-01-06T15:23:46.637-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T04165_CBPFNQ_ate"}
+{"level":"info","ts":"2025-01-06T15:23:46.675-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T04165_CBPFNQ_ate"}
+{"level":"info","ts":"2025-01-06T15:23:46.731-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T04165_CBPFNQ_ate"}
+{"level":"info","ts":"2025-01-06T15:23:46.775-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T32287_CTYJZV_ate"}
+{"level":"info","ts":"2025-01-06T15:23:46.819-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T32287_CTYJZV_ate"}
+{"level":"info","ts":"2025-01-06T15:23:46.864-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T32287_CTYJZV_ate"}
+{"level":"info","ts":"2025-01-06T15:23:46.914-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T32287_CTYJZV_ate"}
+{"level":"info","ts":"2025-01-06T15:23:46.967-0300","caller":"nsxt/lbservice.go:52","msg":"Fetched load balance service found: T32287_CTYJZV_ate"}
+{"level":"info","ts":"2025-01-06T15:23:46.967-0300","caller":"utils/csvmanager.go:34","msg":"Data successfully saved to CSV file"}
+{"level":"info","ts":"2025-01-06T15:23:46.967-0300","caller":"controllers/controller.go:246","msg":"Successfully updated LB service names","total_records":178,"output_file":"diff_updated.csv"}
+{"level":"info","ts":"2025-01-06T15:26:18.046-0300","caller":"nsxt-vs/main.go:48","msg":"Starting server on port 4040"}
+{"level":"info","ts":"2025-01-06T15:26:21.497-0300","caller":"utils/csvmanager.go:34","msg":"Data successfully saved to CSV file"}
+{"level":"info","ts":"2025-01-06T15:26:21.497-0300","caller":"controllers/controller.go:141","msg":"Load balance data successfully saved to CSV","records":4158,"filename":"vs.csv"}
+{"level":"info","ts":"2025-01-06T15:26:22.293-0300","caller":"nsxt/vs.go:69","msg":"Fetched page of virtual servers","count":1000,"total_so_far":1000}
+{"level":"info","ts":"2025-01-06T15:26:22.908-0300","caller":"nsxt/vs.go:69","msg":"Fetched page of virtual servers","count":1000,"total_so_far":2000}
+{"level":"info","ts":"2025-01-06T15:26:23.527-0300","caller":"nsxt/vs.go:69","msg":"Fetched page of virtual servers","count":1000,"total_so_far":3000}
+{"level":"info","ts":"2025-01-06T15:26:24.198-0300","caller":"nsxt/vs.go:69","msg":"Fetched page of virtual servers","count":1000,"total_so_far":4000}
+{"level":"info","ts":"2025-01-06T15:26:24.691-0300","caller":"nsxt/vs.go:69","msg":"Fetched page of virtual servers","count":326,"total_so_far":4326}
+{"level":"info","ts":"2025-01-06T15:26:24.691-0300","caller":"nsxt/vs.go:87","msg":"Completed fetching all virtual servers","total_records":4326}
+{"level":"info","ts":"2025-01-06T15:26:24.695-0300","caller":"utils/csvmanager.go:34","msg":"Data successfully saved to CSV file"}
+{"level":"info","ts":"2025-01-06T15:26:24.695-0300","caller":"controllers/controller.go:174","msg":"NSXT data successfully saved to CSV","records":4326,"filename":"nsxt.csv"}
+{"level":"info","ts":"2025-01-06T15:26:24.723-0300","caller":"utils/csvmanager.go:34","msg":"Data successfully saved to CSV file"}
+{"level":"info","ts":"2025-01-06T15:26:24.723-0300","caller":"utils/csvmanager.go:102","msg":"Data successfully saved to CSV file - 179 - diff.csv"}
+{"level":"info","ts":"2025-01-06T15:26:34.130-0300","caller":"utils/csvmanager.go:34","msg":"Data successfully saved to CSV file"}
+{"level":"info","ts":"2025-01-06T15:26:34.130-0300","caller":"controllers/controller.go:246","msg":"Successfully updated LB service names","total_records":178,"output_file":"diff_updated.csv"}
+{"level":"info","ts":"2025-01-06T16:31:40.612-0300","caller":"nsxt-vs/main.go:48","msg":"Starting server on port 4040"}
+{"level":"info","ts":"2025-01-06T16:32:07.416-0300","caller":"nsxt-vs/main.go:48","msg":"Starting server on port 4040"}
+{"level":"info","ts":"2025-01-06T16:33:23.239-0300","caller":"utils/csvmanager.go:34","msg":"Data successfully saved to CSV file"}
+{"level":"info","ts":"2025-01-06T16:36:19.824-0300","caller":"nsxt-vs/main.go:48","msg":"Starting server on port 4040"}
+{"level":"info","ts":"2025-01-06T16:36:41.113-0300","caller":"utils/csvmanager.go:34","msg":"Data successfully saved to CSV file"}
+{"level":"info","ts":"2025-01-06T16:43:32.460-0300","caller":"utils/csvmanager.go:34","msg":"Data successfully saved to CSV file"}
+{"level":"info","ts":"2025-01-06T16:44:44.393-0300","caller":"nsxt-vs/main.go:48","msg":"Starting server on port 4040"}
+{"level":"info","ts":"2025-01-06T16:44:50.144-0300","caller":"utils/csvmanager.go:34","msg":"Data successfully saved to CSV file"}
+{"level":"info","ts":"2025-01-06T16:44:50.145-0300","caller":"controllers/controller.go:189","msg":"Load balance data successfully saved to CSV","records":4158,"filename":"vs.csv"}
+{"level":"info","ts":"2025-01-06T16:44:51.036-0300","caller":"nsxt/vs.go:69","msg":"Fetched page of virtual servers","count":1000,"total_so_far":1000}
+{"level":"info","ts":"2025-01-06T16:44:51.782-0300","caller":"nsxt/vs.go:69","msg":"Fetched page of virtual servers","count":1000,"total_so_far":2000}
+{"level":"info","ts":"2025-01-06T16:44:52.421-0300","caller":"nsxt/vs.go:69","msg":"Fetched page of virtual servers","count":1000,"total_so_far":3000}
+{"level":"info","ts":"2025-01-06T16:44:53.229-0300","caller":"nsxt/vs.go:69","msg":"Fetched page of virtual servers","count":1000,"total_so_far":4000}
+{"level":"info","ts":"2025-01-06T16:44:53.762-0300","caller":"nsxt/vs.go:69","msg":"Fetched page of virtual servers","count":326,"total_so_far":4326}
+{"level":"info","ts":"2025-01-06T16:44:53.762-0300","caller":"nsxt/vs.go:87","msg":"Completed fetching all virtual servers","total_records":4326}
+{"level":"info","ts":"2025-01-06T16:44:53.768-0300","caller":"utils/csvmanager.go:34","msg":"Data successfully saved to CSV file"}
+{"level":"info","ts":"2025-01-06T16:44:53.768-0300","caller":"controllers/controller.go:222","msg":"NSXT data successfully saved to CSV","records":4326,"filename":"nsxt.csv"}
+{"level":"info","ts":"2025-01-06T16:44:53.813-0300","caller":"utils/csvmanager.go:34","msg":"Data successfully saved to CSV file"}
+{"level":"info","ts":"2025-01-06T16:44:53.813-0300","caller":"utils/csvmanager.go:102","msg":"Data successfully saved to CSV file - 179 - diff.csv"}
+{"level":"info","ts":"2025-01-06T16:45:03.958-0300","caller":"utils/csvmanager.go:34","msg":"Data successfully saved to CSV file"}
+{"level":"info","ts":"2025-01-06T16:45:03.958-0300","caller":"controllers/controller.go:294","msg":"Successfully updated LB service names","total_records":178,"output_file":"diff_updated.csv"}
+{"level":"info","ts":"2025-01-06T16:46:04.863-0300","caller":"utils/csvmanager.go:34","msg":"Data successfully saved to CSV file"}
+{"level":"info","ts":"2025-01-06T16:55:14.504-0300","caller":"nsxt-vs/main.go:48","msg":"Starting server on port 4040"}
+{"level":"info","ts":"2025-01-06T16:55:43.050-0300","caller":"nsxt-vs/main.go:48","msg":"Starting server on port 4040"}
+{"level":"info","ts":"2025-01-06T16:56:25.003-0300","caller":"utils/csvmanager.go:34","msg":"Data successfully saved to CSV file"}
+{"level":"info","ts":"2025-01-06T16:57:48.965-0300","caller":"nsxt-vs/main.go:48","msg":"Starting server on port 4040"}
+{"level":"info","ts":"2025-01-06T16:58:11.847-0300","caller":"utils/csvmanager.go:34","msg":"Data successfully saved to CSV file"}
+{"level":"info","ts":"2025-01-06T16:59:51.652-0300","caller":"nsxt-vs/main.go:48","msg":"Starting server on port 4040"}
+{"level":"info","ts":"2025-01-06T17:00:14.377-0300","caller":"utils/csvmanager.go:34","msg":"Data successfully saved to CSV file"}
+{"level":"info","ts":"2025-01-06T17:00:16.638-0300","caller":"utils/csvmanager.go:34","msg":"Data successfully saved to CSV file"}
+{"level":"info","ts":"2025-01-06T17:00:18.578-0300","caller":"utils/csvmanager.go:34","msg":"Data successfully saved to CSV file"}
+{"level":"info","ts":"2025-01-06T17:01:15.818-0300","caller":"nsxt-vs/main.go:48","msg":"Starting server on port 4040"}
+{"level":"info","ts":"2025-01-06T17:06:19.840-0300","caller":"nsxt-vs/main.go:48","msg":"Starting server on port 4040"}
+{"level":"info","ts":"2025-01-06T17:36:19.560-0300","caller":"nsxt-vs/main.go:59","msg":"Starting server on port 4040"}
+{"level":"error","ts":"2025-01-06T17:36:41.750-0300","caller":"nsxt/lbservice.go:84","msg":"Failed to parse JSON response","error":"unexpected end of JSON input","stacktrace":"github.com/chmenegatti/nsxt-vs/nsxt.(*Client).DeleteLbVs\n\t/home/cesar/go/src/nsxt-vs/nsxt/lbservice.go:84\ngithub.com/chmenegatti/nsxt-vs/controllers.(*CSVController).DeleteVs\n\t/home/cesar/go/src/nsxt-vs/controllers/controller.go:113\ngithub.com/labstack/echo/v4.(*Echo).add.func1\n\t/home/cesar/.asdf/installs/golang/1.23.2/packages/pkg/mod/github.com/labstack/echo/v4@v4.13.3/echo.go:581\nmain.main.func2.1\n\t/home/cesar/go/src/nsxt-vs/main.go:52\ngithub.com/labstack/echo/v4/middleware.CORSWithConfig.func1.1\n\t/home/cesar/.asdf/installs/golang/1.23.2/packages/pkg/mod/github.com/labstack/echo/v4@v4.13.3/middleware/cors.go:215\ngithub.com/labstack/echo/v4/middleware.RecoverWithConfig.func1.1\n\t/home/cesar/.asdf/installs/golang/1.23.2/packages/pkg/mod/github.com/labstack/echo/v4@v4.13.3/middleware/recover.go:130\ngithub.com/labstack/echo/v4/middleware.LoggerWithConfig.func2.1\n\t/home/cesar/.asdf/installs/golang/1.23.2/packages/pkg/mod/github.com/labstack/echo/v4@v4.13.3/middleware/logger.go:125\ngithub.com/labstack/echo/v4.(*Echo).ServeHTTP\n\t/home/cesar/.asdf/installs/golang/1.23.2/packages/pkg/mod/github.com/labstack/echo/v4@v4.13.3/echo.go:668\nnet/http.serverHandler.ServeHTTP\n\t/home/cesar/.asdf/installs/golang/1.23.2/go/src/net/http/server.go:3210\nnet/http.(*conn).serve\n\t/home/cesar/.asdf/installs/golang/1.23.2/go/src/net/http/server.go:2092"}
+{"level":"info","ts":"2025-01-06T17:36:45.094-0300","caller":"utils/csvmanager.go:59","msg":"Data successfully saved to CSV file"}
+{"level":"info","ts":"2025-01-06T17:36:45.094-0300","caller":"controllers/controller.go:190","msg":"Load balance data successfully saved to CSV","records":4158,"filename":"vs.csv"}
+{"level":"info","ts":"2025-01-06T17:36:46.134-0300","caller":"nsxt/vs.go:69","msg":"Fetched page of virtual servers","count":1000,"total_so_far":1000}
+{"level":"info","ts":"2025-01-06T17:36:47.016-0300","caller":"nsxt/vs.go:69","msg":"Fetched page of virtual servers","count":1000,"total_so_far":2000}
+{"level":"info","ts":"2025-01-06T17:36:48.056-0300","caller":"nsxt/vs.go:69","msg":"Fetched page of virtual servers","count":1000,"total_so_far":3000}
+{"level":"info","ts":"2025-01-06T17:36:48.800-0300","caller":"nsxt/vs.go:69","msg":"Fetched page of virtual servers","count":1000,"total_so_far":4000}
+{"level":"info","ts":"2025-01-06T17:36:49.418-0300","caller":"nsxt/vs.go:69","msg":"Fetched page of virtual servers","count":325,"total_so_far":4325}
+{"level":"info","ts":"2025-01-06T17:36:49.418-0300","caller":"nsxt/vs.go:87","msg":"Completed fetching all virtual servers","total_records":4325}
+{"level":"info","ts":"2025-01-06T17:36:49.422-0300","caller":"utils/csvmanager.go:59","msg":"Data successfully saved to CSV file"}
+{"level":"info","ts":"2025-01-06T17:36:49.422-0300","caller":"controllers/controller.go:223","msg":"NSXT data successfully saved to CSV","records":4325,"filename":"nsxt.csv"}
+{"level":"info","ts":"2025-01-06T17:36:49.477-0300","caller":"utils/csvmanager.go:59","msg":"Data successfully saved to CSV file"}
+{"level":"info","ts":"2025-01-06T17:36:49.478-0300","caller":"utils/csvmanager.go:127","msg":"Data successfully saved to CSV file - 178 - diff.csv"}
+{"level":"info","ts":"2025-01-06T17:36:49.478-0300","caller":"utils/csvmanager.go:32","msg":"Data successfully read from CSV file"}
+{"level":"info","ts":"2025-01-06T17:36:59.281-0300","caller":"utils/csvmanager.go:59","msg":"Data successfully saved to CSV file"}
+{"level":"info","ts":"2025-01-06T17:36:59.281-0300","caller":"controllers/controller.go:284","msg":"Successfully updated LB service names","total_records":177,"output_file":"diff_updated.csv"}
+{"level":"info","ts":"2025-01-06T17:37:07.872-0300","caller":"utils/csvmanager.go:32","msg":"Data successfully read from CSV file"}
+{"level":"info","ts":"2025-01-06T17:37:08.223-0300","caller":"utils/slack.go:91","msg":"Message sent to Slack successfully"}
+{"level":"info","ts":"2025-01-06T17:41:14.720-0300","caller":"nsxt-vs/main.go:59","msg":"Starting server on port 4040"}
+{"level":"info","ts":"2025-01-06T17:41:34.001-0300","caller":"nsxt-vs/main.go:59","msg":"Starting server on port 4040"}
+{"level":"info","ts":"2025-01-06T17:41:37.626-0300","caller":"utils/csvmanager.go:59","msg":"Data successfully saved to CSV file"}
+{"level":"info","ts":"2025-01-06T17:41:37.626-0300","caller":"controllers/controller.go:190","msg":"Load balance data successfully saved to CSV","records":4158,"filename":"vs.csv"}
+{"level":"info","ts":"2025-01-06T17:41:38.293-0300","caller":"nsxt/vs.go:69","msg":"Fetched page of virtual servers","count":1000,"total_so_far":1000}
+{"level":"info","ts":"2025-01-06T17:41:38.959-0300","caller":"nsxt/vs.go:69","msg":"Fetched page of virtual servers","count":1000,"total_so_far":2000}
+{"level":"info","ts":"2025-01-06T17:41:39.874-0300","caller":"nsxt/vs.go:69","msg":"Fetched page of virtual servers","count":1000,"total_so_far":3000}
+{"level":"info","ts":"2025-01-06T17:41:40.782-0300","caller":"nsxt/vs.go:69","msg":"Fetched page of virtual servers","count":1000,"total_so_far":4000}
+{"level":"info","ts":"2025-01-06T17:41:41.602-0300","caller":"nsxt/vs.go:69","msg":"Fetched page of virtual servers","count":325,"total_so_far":4325}
+{"level":"info","ts":"2025-01-06T17:41:41.602-0300","caller":"nsxt/vs.go:87","msg":"Completed fetching all virtual servers","total_records":4325}
+{"level":"info","ts":"2025-01-06T17:41:41.606-0300","caller":"utils/csvmanager.go:59","msg":"Data successfully saved to CSV file"}
+{"level":"info","ts":"2025-01-06T17:41:41.606-0300","caller":"controllers/controller.go:223","msg":"NSXT data successfully saved to CSV","records":4325,"filename":"nsxt.csv"}
+{"level":"info","ts":"2025-01-06T17:41:41.637-0300","caller":"utils/csvmanager.go:59","msg":"Data successfully saved to CSV file"}
+{"level":"info","ts":"2025-01-06T17:41:41.637-0300","caller":"utils/csvmanager.go:127","msg":"Data successfully saved to CSV file - 178 - diff.csv"}
+{"level":"info","ts":"2025-01-06T17:41:41.638-0300","caller":"utils/csvmanager.go:32","msg":"Data successfully read from CSV file"}
+{"level":"info","ts":"2025-01-06T17:41:52.076-0300","caller":"utils/csvmanager.go:59","msg":"Data successfully saved to CSV file"}
+{"level":"info","ts":"2025-01-06T17:41:52.076-0300","caller":"controllers/controller.go:284","msg":"Successfully updated LB service names","total_records":177,"output_file":"diff_updated.csv"}
+{"level":"info","ts":"2025-01-06T17:41:56.094-0300","caller":"utils/csvmanager.go:32","msg":"Data successfully read from CSV file"}
+{"level":"info","ts":"2025-01-06T17:41:56.429-0300","caller":"utils/slack.go:93","msg":"Message sent to Slack successfully"}

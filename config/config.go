@@ -8,23 +8,20 @@ import (
 )
 
 type DatabaseConfig struct {
-	User     string `yaml:"user"`
-	Password string `yaml:"password"`
-	Host     string `yaml:"host"`
-	Port     int    `yaml:"port"`
-	DBName   string `yaml:"dbname"`
-}
-
-type NSXTConfig struct {
+	User      string `yaml:"user"`
+	Password  string `yaml:"password"`
+	Host      string `yaml:"host"`
+	Port      int    `yaml:"port"`
+	DBName    string `yaml:"dbname"`
 	URL       string `yaml:"url"`
+	SessionId string `yaml:"sessionid"`
 	Auth      string `yaml:"auth"`
-	SessionId string `yaml:"session_id"`
+	Server    string `yaml:"server"`
 }
 
 type Config struct {
-	Databases   map[string]DatabaseConfig `yaml:"databases"`
-	NSXTServers map[string]NSXTConfig     `yaml:"nsxt_servers"`
-	Token       string                    `yaml:"token"`
+	Server map[string]DatabaseConfig `yaml:"Server"`
+	Token  string                    `yaml:"token"`
 }
 
 func LoadConfig(edge string, logger *zap.Logger) (*Config, error) {
@@ -43,14 +40,9 @@ func LoadConfig(edge string, logger *zap.Logger) (*Config, error) {
 		return nil, err
 	}
 
-	_, exists := config.Databases[edge]
+	_, exists := config.Server[edge]
 	if !exists {
-		return nil, errors.New("database configuration not found for edge: " + edge)
-	}
-
-	_, exists = config.NSXTServers[edge]
-	if !exists {
-		return nil, errors.New("nsxt configuration not found for edge: " + edge)
+		return nil, errors.New("server configuration not found for edge: " + edge)
 	}
 
 	return config, nil
