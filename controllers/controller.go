@@ -137,10 +137,6 @@ func (c *CSVController) DeleteVs(ctx echo.Context) error {
 		if record[0] != id {
 			updatedRecords = append(updatedRecords, record)
 		}
-
-		if len(data) == 0 {
-			return ctx.JSON(http.StatusNotFound, Response{Error: "virtual server not found"})
-		}
 	}
 
 	dataJSON, err := json.Marshal(data)

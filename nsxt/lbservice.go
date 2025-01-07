@@ -70,8 +70,6 @@ func (c *Client) DeleteLbVs(id string) error {
 		return err
 	}
 
-	body, err := io.ReadAll(res.Body)
-
 	err = res.Body.Close()
 
 	if err != nil {
@@ -79,9 +77,8 @@ func (c *Client) DeleteLbVs(id string) error {
 		return err
 	}
 
-	var response LbServices
-	if err := json.Unmarshal(body, &response); err != nil {
-		c.Logger.Error("Failed to parse JSON response", zap.Error(err))
+	if res.StatusCode != 200 {
+		c.Logger.Error("Failed to delete virtual server", zap.Error(err))
 		return err
 	}
 
