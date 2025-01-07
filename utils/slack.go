@@ -8,6 +8,7 @@ import (
 	"net/http"
 	"strings"
 
+	"github.com/labstack/echo/v4"
 	"go.uber.org/zap"
 )
 
@@ -29,26 +30,16 @@ const (
 	SlackChannel = "C05JHLCMVK8"
 )
 
-func SendSlackMesage(edge, server, token string, logger *zap.Logger) error {
+func SendSlackMesage(ctx echo.Context, title, message string, logger *zap.Logger) error {
 
-	records, err := ReadFromCSV(CSVPath, logger)
-	if err != nil {
-		logger.Error("Failed to read CSV file", zap.Error(err))
-		return err
-	}
-
-	edge = strings.ToUpper(edge)
-	mainText := fmt.Sprintf("*Virtual Servers Órfãos Detectados - %s*", edge)
+	edge := strings.ToUpper(ctx.Get("edge").(string))
 
 	payload := SlackPayload{
 		Channel: SlackChannel,
-		Text:    mainText,
+		Text:    fmt.Sprintf("%s-%s", title, edge),
 		Attachments: []SlackAttachment{
 			{
-				Text: fmt.Sprintf(
-					"Existe um total de %d virtual servers órfãos no %s\n Clique nesse endereço para verificar: %s",
-					len(records)-1, edge, server,
-				),
+				Text:           message,
 				Color:          "#D00000",
 				AttachmentType: "default",
 			},
@@ -69,7 +60,7 @@ func SendSlackMesage(edge, server, token string, logger *zap.Logger) error {
 
 	req.Header.Add("Content-Type", "application/json")
 	req.Header.Set("Content-Type", "application/json")
-	req.Header.Set("Authorization", fmt.Sprintf("Bearer %s", token))
+	req.Header.Set("Authorization", fmt.Sprintf("Bearer %s", ctx.Get("token").(string)))
 
 	client := &http.Client{}
 	resp, err := client.Do(req)

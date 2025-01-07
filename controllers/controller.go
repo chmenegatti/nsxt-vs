@@ -58,11 +58,13 @@ func (c *CSVController) GenerateCSV(ctx echo.Context) error {
 		return ctx.JSON(http.StatusInternalServerError, Response{Error: "failed to add LB display name"})
 	}
 
-	edge := ctx.Get("edge").(string)
-	server := ctx.Get("server").(string)
-	token := ctx.Get("token").(string)
+	title := "*Virtual Servers Órfãos Detectados*"
+	message := fmt.Sprintf(
+		"Existe um total de %d virtual servers órfãos no NSXT\n Clique nesse endereço para verificar: %s", diff-1,
+		ctx.Get("server").(string),
+	)
 
-	if err := utils.SendSlackMesage(edge, server, token, c.logger); err != nil {
+	if err := utils.SendSlackMesage(ctx, title, message, c.logger); err != nil {
 		return ctx.JSON(http.StatusInternalServerError, Response{Error: "failed to send slack message"})
 	}
 
