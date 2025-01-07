@@ -699,3 +699,6 @@
 {"level":"info","ts":"2025-01-06T21:13:44.795-0300","caller":"utils/slack.go:84","msg":"Message sent to Slack successfully"}
 {"level":"info","ts":"2025-01-06T21:17:38.461-0300","caller":"utils/csvmanager.go:32","msg":"Data successfully read from CSV file"}
 {"level":"info","ts":"2025-01-06T21:17:38.463-0300","caller":"utils/csvmanager.go:32","msg":"Data successfully read from CSV file"}
+{"level":"info","ts":"2025-01-06T21:23:45.557-0300","caller":"utils/csvmanager.go:32","msg":"Data successfully read from CSV file"}
+{"level":"info","ts":"2025-01-06T21:24:10.374-0300","caller":"utils/csvmanager.go:32","msg":"Data successfully read from CSV file"}
+{"level":"info","ts":"2025-01-06T21:28:09.873-0300","caller":"utils/csvmanager.go:32","msg":"Data successfully read from CSV file"}

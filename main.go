@@ -41,7 +41,14 @@ func main() {
 	e := echo.New()
 	e.Use(middleware.Logger())
 	e.Use(middleware.Recover())
-	e.Use(middleware.CORS())
+	e.Use(
+		middleware.CORSWithConfig(
+			middleware.CORSConfig{
+				AllowOrigins: []string{"*", "http://localhost", "http://localhost:4040", "http://172.0.0.1:4040"},
+				AllowMethods: []string{"GET", "DELETE"},
+			},
+		),
+	)
 
 	e.Use(
 		func(next echo.HandlerFunc) echo.HandlerFunc {
