@@ -733,3 +733,7 @@
 {"level":"info","ts":"2025-01-06T22:11:06.242-0300","caller":"nsxt-vs/main.go:67","msg":"Starting server on port 4040"}
 {"level":"info","ts":"2025-01-06T22:11:19.944-0300","caller":"utils/csvmanager.go:32","msg":"Data successfully read from CSV file"}
 {"level":"info","ts":"2025-01-06T22:11:47.642-0300","caller":"utils/csvmanager.go:59","msg":"Data successfully saved to CSV file"}
+{"level":"info","ts":"2025-01-06T22:16:56.588-0300","caller":"nsxt-vs/main.go:67","msg":"Starting server on port 4040"}
+{"level":"info","ts":"2025-01-06T22:17:27.350-0300","caller":"utils/csvmanager.go:32","msg":"Data successfully read from CSV file"}
+{"level":"info","ts":"2025-01-06T22:17:29.527-0300","caller":"utils/csvmanager.go:59","msg":"Data successfully saved to CSV file"}
+{"level":"info","ts":"2025-01-06T22:17:30.113-0300","caller":"utils/slack.go:84","msg":"Message sent to Slack successfully"}

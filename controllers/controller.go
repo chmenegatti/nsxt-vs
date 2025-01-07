@@ -151,6 +151,15 @@ func (c *CSVController) DeleteVs(ctx echo.Context) error {
 		return ctx.JSON(http.StatusInternalServerError, Response{Error: "failed to write updated records to CSV"})
 	}
 
+	message := fmt.Sprintf("Virtual Server %s - %s: deletado com sucesso", data["display_name"], data["client_code"])
+
+	if err := utils.SendSlackMesage(
+		ctx, "Virtual Server Deletado",
+		message, c.logger,
+	); err != nil {
+		return ctx.JSON(http.StatusInternalServerError, Response{Error: "failed to send slack message"})
+	}
+
 	return ctx.JSON(
 		http.StatusOK,
 		Response{
